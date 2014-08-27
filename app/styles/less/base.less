@@ -1,0 +1,363 @@
+HTML{
+	height: 100%;
+}
+BODY{
+	font-family: @sansFontFamily;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+	color: @textColor;
+	margin: 0;
+	padding: 0;
+	background: @bodyBackground;
+	// .transition(background-color .3s);
+}
+#wrapper{
+	margin: 0 auto;
+	width: @gridRowWidth + 2*@gridGutterWidth;
+	background: @gray;
+	padding: 0;
+	min-height: 100%;
+	height: auto !important;
+	// overflow: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+#jhst-container{
+	// padding: @baseLineHeight * 4 0;
+	min-height: 640px;
+	// overflow: hidden;
+	height: 100%;
+}
+a {
+  color: @linkColor;
+}
+a:hover {
+  color: @linkColorHover;
+}
+
+.icon{
+	position: relative;
+	display: inline-block;
+	.hide-text;
+}
+
+h1{
+	margin-top: 0;
+}
+
+#fader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: @white;
+	.opacity(95);
+	z-index: @faderIndex;
+	.transition(opacity .5s);
+	&.in{
+		.opacity(0);
+	}
+}
+
+
+.input_error {
+    color: #C81414 !important;
+
+    .placeholder(#C81414);
+}
+
+
+.hsh {
+	color: @blue;
+	text-decoration: none;
+	&:hover {
+		color: @blue;
+		text-decoration: underline;
+	}
+}
+
+.lnk, 
+.unm {
+	// color: @red;	
+	text-decoration: none;
+	&:hover {
+		// color: @red;
+		text-decoration: underline;
+	}
+}
+
+.lazy {
+	.transition(opacity 0.8s);
+	opacity: 0;
+	width: 100%;
+}
+.img-loaded .lazy {
+	opacity: 1;
+}
+
+.load-bg {
+	background: @grayLighter2 url(/images/ani/spinner.gif) center center no-repeat;
+}
+
+
+.img-loaded.load-bg {
+	background-image: none;	
+}
+
+.cover-bg {
+	.background-size(cover);
+}
+
+
+
+
+.input_clear {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+
+	width: 100%;
+	.box-sizing(border-box);
+	.resizable(none);
+	.border-radius(0);
+}
+
+
+
+
+.jhst__inp-group {
+	overflow: hidden;
+	border: 1px solid @grayLight1;
+	border-top-color: @grayLight10;
+	.border-radius(2px);
+	// .box-shadow(inset 0 1px 3px rgba(0,0,0,.1));
+	margin-bottom: 29px;
+}
+
+	.jhst__inp-cont_empty {
+		font-size: 0;
+		line-height: 0;
+		.user-select(none);
+		margin-bottom: 26px;
+	}
+
+	.jhst__inp-cont {
+		font-size: 0;
+		line-height: 0;
+		padding: 14px;
+		height: 14px;
+		.user-select(none);
+
+		& {
+			border-bottom: 1px solid @grayLight1;
+		}
+
+		&:last-child {
+			margin-bottom: -1px;
+		}
+	}
+
+	.jhst__select-cont {
+		height: auto;
+	}
+
+	
+	.jhst__lbl {
+		font-size: 13px;
+		line-height: 16px;
+		float: left;
+		position: relative;
+		color: @grayLight;
+	}
+
+
+	.jhst__inp-cont-in {
+		font-size: 0;
+		line-height: 0;
+		margin-left: 146px;
+	}
+
+		.jhst__inp {
+			resize:none;
+			& {
+				border: none;
+				font-size: 13px;
+				line-height: 14px;
+				-webkit-font-smoothing: antialiased;
+
+				color: @textColor;
+				display: inline-block;
+				width: 100%;
+				vertical-align: top;
+				outline: none;
+				padding: 0;
+				.transition(color 0.3s);
+
+				text-align: left;
+				background-color: transparent;
+			}
+			&:focus {
+				color: @textColor;
+			}
+			&:disabled {
+				color: @grayLight;
+			}
+			.placeholder(@grayLight);
+		}
+
+		.jhst__select {
+			resize:none;
+			& {
+				// border: none;
+				border-color: @gray;
+				font-size: 13px;
+				line-height: 14px;
+				-webkit-font-smoothing: antialiased;
+
+				color: @textColor;
+				// display: inline-block;
+				// width: 100%;
+				vertical-align: top;
+				// outline: none;
+				// padding: 0;
+				.transition(color 0.3s);
+
+				text-align: left;
+				background-color: transparent;
+			}
+			&:focus {
+				color: @textColor;
+			}
+			&:disabled {
+				color: @grayLight;
+			}
+			.placeholder(@grayLight);
+		}
+
+.error-inp {
+	background-color: @errorBg;
+	.jhst__lbl {
+		color: @errorText;
+	}
+
+	input,
+	textarea {
+		color: @errorText !important;
+		.placeholder(@errorText);
+	}
+}
+
+
+
+				@deactiveColor: #7c848c;
+				@activeColor: #868e96;
+
+				@deactiveColorBg: @white;
+				@activeColorBg: #2cb482;
+				@activeColorBg2: #eeeff0;
+
+				@deactiveBorderColor: #cfcfd2;
+
+				
+				.jhst__toggle {
+					font-size: 0;
+					line-height: 0;
+					display: inline-block;
+				}
+
+					.jhst__toggle-sp {
+						display: inline-block;
+					}
+
+					.jhst__toggle_on,
+					.jhst__toggle_off {
+						cursor: pointer;
+						color: @activeColor;
+						text-decoration: none;
+						display: inline-block;
+						background: @white;
+						background-color: @activeColorBg;
+						padding: 6px 10px;
+						overflow: hidden;
+						
+						border-style: solid;
+						border-width: 0;
+						font-size: 11px;
+						line-height: 1;
+
+						&:hover,
+						&:active {
+							text-decoration: none;
+							color: @activeColor;
+						}
+					}
+
+					.jhst__toggle_on {
+						.border-radius(2px 0 0 2px);
+						.box-shadow(inset 1px 2px 4px #00634b);
+					}
+
+					.jhst__toggle_off {
+						.border-radius(0 2px 2px 0);
+						.box-shadow(inset -1px 2px 4px #bdbdc5);
+					}
+
+				.off {
+					.jhst__toggle_on {
+						color: @deactiveColor;
+						background-color: @deactiveColorBg;
+						.box-shadow(none);
+						
+						border-color: @deactiveBorderColor;
+						border-width: 1px 0 2px 1px;
+						padding: 6px-1px 10px 6px-2px 10px-1px;
+
+						&:hover {
+							color: @deactiveColor;
+						}
+					}
+
+					.jhst__toggle_off {
+						color: @activeColor;
+						background-color: @activeColorBg2;
+						border-bottom-color: #ebebed;
+						border-bottom-width: 1px;
+						padding-bottom: 6px-1px;
+
+						&:hover {
+							color: @activeColor;
+						}
+					}
+				}
+
+				.on {
+
+					.jhst__toggle_on {
+						color: @white;
+						background-color: @activeColorBg;
+
+						&:hover {
+							color: @white;
+						}
+					}
+
+					.jhst__toggle_off {
+						color: @deactiveColor;
+						background-color: @deactiveColorBg;
+						.box-shadow(none);
+
+						border-color: @deactiveBorderColor;
+						border-width: 1px 1px 2px 0;
+						padding: 6px-1px 10px-1px 6px-2px 10px;
+
+						&:hover {
+							color: @deactiveColor;
+							text-decoration: none;
+						}
+					}
+				}
+
+
+// input:-webkit-autofill {
+// 	background-color: @white;
+// }

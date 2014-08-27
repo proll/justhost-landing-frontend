@@ -1,0 +1,299 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+
+// =======================
+// jhst palette
+// =======================
+@black:                 #000;
+@blue:                  #158adb;
+@blue_sexy:             #009ee7;
+@blue_sexy_dark:        #0077d6;
+@blue2:                 #61C7F2;
+@green:                 #193a23;
+@green_sexy: 			#19a676;
+@green_sexy2: 			#2fad76;
+@green_sexy_dark: 		#21946a;
+@greenHead:             #38a27b;
+@redLight:              #ff6666;
+@red_hover:             #d21f00;
+@grayLighter:           #ccc;
+@grayLighter02:         #cecdcc;
+@grayLighter3:          #e6e6e6;
+@grayLighter4:          #eee;
+
+
+@red:                   #d34141;
+@red_light:             #fff0f0;
+@red_sexy:              #ec6751;
+@red_sexy_border:       #c64631;
+@red_sexy_dark: 		#bc3721;
+
+
+@grayDark:              #282828;
+@grayDarker:            #282828;
+@grayDarker10:          #505050;
+@grayDarker1:           #646464;
+@grayDarker2:           #6e6e6e;
+@grayDarker3:           #737678;
+@gray:                  #8c8c8c;
+@grayLight:             #969696;
+@grayLight10:           #bebebe;
+@grayLight11:           #c7c7c7;
+@grayLight1:            #dcdcdc;
+@grayLight2:            #dfdedd;
+@grayLighter02:         #e0e0e0;
+@grayLighter1:          #ebeae9;
+@grayLighter10:         #f0f0f0;
+@grayLighter11:         #f4f4f6;
+@grayLighter12:         #f6f6f8;
+@grayLighter2:          #f8f8fa;
+
+
+@blueText: 				#687078;
+@blueTextLight: 		#a4acb4;
+
+
+@green2: 				#33a875;
+@green3: 				#00a267;
+
+
+
+@fbColorDark:           #003fb7;
+@fbColor:               #3B5998;
+@fbColorLight:          #3266c8;
+
+@vkColorDark:           #275c93;
+@vkColor:               #5175A5;
+@vkColorLight:          #557ea9;
+
+
+@twColorDark:           #0097c7;
+@twColor:               #5CB0D7;
+@twColorLight:          #00b3d8;
+
+@sandColor: 			#ffe0a3;
+@purple: 				#a97a8a;
+@headerColor: 			@white;
+
+@errorBg: 				@red_light;
+@errorText: 			#C81414;
+
+.vkGradient {
+	#gradient .vertical(#5b89b6, #39659b);
+}
+
+.fbGradient {
+	#gradient .vertical(#4e6ca6, #2e4886);
+}
+
+.twGradient {
+	#gradient .vertical(#00b3d8, #0097c7);
+}
+
+
+
+
+@textColor: 			#222a32;
+@textColorLight: 		#82888c;
+
+// GRID
+// --------------------------------------------------
+@gridColumns:             12;
+
+// Default 960px grid
+// -------------------------
+@gridColumnWidth:         40px;
+@gridGutterWidth:         40px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * @gridColumns);
+
+// // tablet
+@gridColumnsTablet: 9;
+@gridRowWidthTablet: (@gridColumnsTablet * @gridColumnWidth) + (@gridGutterWidth * (@gridColumnsTablet - 1));
+@gridRowMaxWidthPhone: @gridRowWidthTablet - 1;
+@gridRowMinWidthPhone: @gridRowWidthPhone - 1;
+
+
+// tablet + phone
+@gridColumnsPhone: 8;
+@gridRowWidthPhone: (@gridColumnsPhone * @gridColumnWidth) + (@gridGutterWidth * (@gridColumnsPhone - 1)) + @gridGutterWidth/2;
+
+
+// Fluid grid
+// -------------------------
+// @fluidGridColumnWidth:         percentage(@gridColumnWidth/@gridRowWidth);
+// @fluidGridGutterWidth:         percentage(@gridGutterWidth/@gridRowWidth);
+
+
+
+
+
+
+
+// 
+// -------------------------
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+// @blueDark:              #0064cd;
+// @green:                 #46a546;
+@yellow:                #ffd957;
+@yellow_light:          #e8fe9e;
+@orange:                #f89406;
+// @pink:                  #c3325f;
+// @purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+
+
+// Links
+// -------------------------
+@linkColor:			 	@blue;
+@linkColorHover:		@blue;
+
+// @sansFontFamily:		'Open Sans', Arial, sans-serif;
+@sansFontFamily:		'Ubuntu', Arial, sans-serif;
+@sans0FontFamily:		Arial, sans-serif;
+
+@baseFontSize:		  	14px;
+@baseFontFamily:		@sansFontFamily;
+@baseLineHeight:		20px;
+
+@smallFontSize: 		@baseFontSize - 2px;
+@smallLineHeight: 		@baseLineHeight - 2px;
+
+@bigFontSize: 			@baseFontSize + 2px;
+@bigLineHeight: 		@baseLineHeight + 2px;
+
+
+
+// Forms
+// -------------------------
+@inputBackground:				@white;
+@inputBorder:					#eeeeee;
+@inputBorderRadius:				3px;
+@inputDisabledBackground:		@grayLight;
+@formActionsBackground:			#f5f5f5;
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @grayLight;
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         darken(@grayLight, 10%);
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @gray;
+
+
+
+@baseBorderRadius : 2px;
+
+
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownDividerTop:            #e5e5e5;
+@dropdownDividerBottom:         @white;
+
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkColorActive:       @white;
+
+@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+// Z-indexes
+// --------------------------------------------------
+
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1030;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+
+@faderIndex:			1060;
+@popupIndex:			1070;
+
+@zindexAuthIndex:		1080;
+
+// Navbar
+// -------------------------
+@navbarFontSize:                  13px;
+@navbarLineHeight:                20px;
+@navbarCollapseWidth:             @gridRowMinWidthPhone;
+@navbarPreCollapseWidth:      	  @gridRowWidthTablet;
+@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
+
+@navbarHeight:                    60px;
+@navbarBackgroundHighlight:       #ffffff;
+// @navbarBackground:                rgba(255,255,255,.83);
+@navbarBackground:                @white;
+@navbarBorder:                    @grayLighter02;
+
+@navbarText:                      #242a32;
+@navbarLinkColor:                 @navbarText;
+@navbarLinkColorHover:            @navbarText;
+@navbarLinkColorActive:           @green3;
+@navbarLinkBackgroundHover:       #ffffff;
+@navbarLinkBackgroundActive:      transparent;
+
+@navbarBrandColor:                @navbarLinkColor;
+
+// Inverted navbar
+@navbarInverseBackground:                #111111;
+@navbarInverseBackgroundHighlight:       #222222;
+@navbarInverseBorder:                    #252525;
+
+@navbarInverseText:                      @grayLight;
+@navbarInverseLinkColor:                 @grayLight;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
+@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBorder:              @navbarInverseBackground;
+@navbarInverseSearchPlaceholderColor:    #ccc;
+
+@navbarInverseBrandColor:                @navbarInverseLinkColor;

@@ -1,0 +1,52 @@
+<div class="auth__cont">
+	<div class="auth__social">
+		<h2 class="auth__social-h">{{_ 'Social log in' 'auth'}}</h2>
+		<ul class="auth__social-list">
+			<li class="auth__social-item"><a href="vk" rel="nofollow" class="auth__social-item-lnk auth__social-item-lnk_vk"><i class="qi qi-share-vk auth__social-item-icn"></i></a></li><li class="auth__social-item"><a href="fb" rel="nofollow" class="auth__social-item-lnk auth__social-item-lnk_fb"><i class="qi qi-share-fb auth__social-item-icn"></i></a></li>
+		</ul>
+	</div>
+	<div class="auth__sign">
+		<span class="auth__sign-toggler">{{_ 'or' 'auth'}} <a href="signup" rel="nofollow" class="auth__sign-toggler-lnk auth__sign-toggler_signup">{{_ 'sign up' 'auth'}}</a>
+		<a href="signin" rel="nofollow" class="auth__sign-toggler-lnk auth__sign-toggler_signin">{{_ 'log in by e-mail' 'auth'}}</a>
+		</span>
+		<h2 class="auth__sign-h auth__sign-h_signin">{{_ 'Log in by e-mail' 'auth'}}</h2>
+		<h2 class="auth__sign-h auth__sign-h_signup">{{_ 'Sign up' 'auth'}}</h2>
+		<h2 class="auth__sign-h auth__sign-h_emailconfirm">{{_ 'Enter your e-mail' 'auth'}}</h2>
+		<form action="/auth" class="auth__sign-form">
+			<div class="jhst__inp-group">
+				<div class="jhst__inp-cont">
+					<label>
+						<span class="jhst__lbl">{{_ 'e-mail' 'auth'}}</span>
+						<div class="jhst__inp-cont-in">
+							<input maxlength="50" type="text" class="jhst__inp" name="login" value="">
+						</div>
+					</label>
+				</div>
+				<div class="jhst__inp-cont auth__sign-inp-name-cont">
+					<label>
+						<span class="jhst__lbl">{{_ 'name' 'auth'}}</span>
+						<div class="jhst__inp-cont-in">
+							<input maxlength="55" type="text" class="jhst__inp" name="fio" value="">
+						</div>
+					</label>
+				</div>
+				<div class="jhst__inp-cont auth__sign-inp-password-cont">
+					<label>
+						<span class="jhst__lbl">{{_ 'password' 'auth'}}</span>
+						<div class="jhst__inp-cont-in">
+							<input maxlength="45" type="password" class="jhst__inp" name="password" value="">
+						</div>
+					</label>
+				</div>
+			</div>
+			<div class="auth__sign-user-agreement">
+				{{_ 'I admit <a href="/i/user-agreement/">user agreement</a>' 'auth'}}
+			</div>
+			<input type="submit" class="auth__sign-submit-hidden">
+			<div class="auth__sign-submit">
+				<span class="auth__sign-submit-error"></span>
+				<a href="signin" rel="nofollow" class="auth__sign-submit-a auth__sign-submit_signin">{{_ 'Log in' 'auth'}}</a><a href="signup" rel="nofollow" class="auth__sign-submit-a auth__sign-submit_signup">{{_ 'Sign up' 'auth'}}</a><a href="emailconfirm" rel="nofollow" class="auth__sign-submit-a auth__sign-submit_emailconfirm">{{_ 'Log in' 'auth'}}</a>
+			</div>
+		</form>
+	</div>
+</div>

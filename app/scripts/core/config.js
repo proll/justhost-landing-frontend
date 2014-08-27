@@ -1,0 +1,5 @@
+jhst.Config = function() {
+
+	return {
+	}
+};

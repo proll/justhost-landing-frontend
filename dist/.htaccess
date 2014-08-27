@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^jhstoq.me[:80]*
+RewriteRule v1/(.*)$ http://api.jhstoq.me/v1/$1 [P,L]
+
+RewriteCond %{HTTP_HOST} ^[w\.]*jhstoq.io[:80]* [OR]
+RewriteCond %{HTTP_HOST} ^[w\.]*jhstoq.ru[:80]*
+RewriteRule ^(.*)$ http://jhstoq.me/$1 [R=301,L]
+
+RewriteBase /
+RewriteRule ^(scripts|styles|images|images_static|go|docs|templates|.*\.txt|.*\.xml|.*\.ico)($|/) - [L]
+
+RewriteCond %{HTTP_USER_AGENT} (yandex\w+|googlebot|facebookexternalhit|vkshare|adsbot-google|bingbot|msnbot|psbot|gigabot|twitterbot|linkedinbot|yahoo-mmcrawler|pingdom\.com_bot) [NC]
+RewriteRule (.*) http://188.226.204.196:3333/$1 [P]
+
+RewriteRule ^(.*)$ index.html [L]
