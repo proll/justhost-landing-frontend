@@ -71,11 +71,7 @@ jhst.App = Backbone.Model.extend({
 					break;
 
 				case 'landing':
-					if(jhst.is_authed()) {
-						jhst.navigate('/items', {trigger: true});
-					} else {
-						this.landing.render({section: 0});
-					}
+					this.landing.render({section: 0});
 					break;
 				default:
 					if(!!route[0] && !this.router.previousWasPopup()) {

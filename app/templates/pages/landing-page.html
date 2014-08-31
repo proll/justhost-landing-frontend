@@ -1,17 +1,21 @@
 <header class="landing__header">
-	<a href="/" class="landing__logo-a"><div class="landing__logo"></div></a>
-	<div class="landing__header-info">
-		<p class="landing__header-info-p1">8 800 100 6009</p>
-		<p class="landing__header-info-p2">{{_ 'Лицензия №87316' 'landing'}}</p>
-	</div>
-	<div class="landing__header-btn-cont">
-		<button class="landing__header-btn">{{_ 'Заказать хостинг' 'landing'}}</button>
+	<div class="container">
+		<div class="landing__header-info">
+			<p class="landing__header-info-p1">8 800 100 6009</p>
+			<p class="landing__header-info-p2">{{_ 'Лицензия №87316' 'landing'}}</p>
+		</div>
+		<a href="/" target="_self" class="landing__logo-a"><div class="landing__logo"></div></a>
+		<div class="landing__header-btn-cont">
+			<button class="landing__header-btn">{{_ 'Заказать хостинг' 'landing'}}</button>
+		</div>
 	</div>
 </header>
 <section class="landing-section landing-section1">
 	<div class="landing__container">
-		<i class="i i-inf"></i>
-		<h1 class="landing__h1">{{_ 'Гибкий, безлимитный <br/>хостинг от 27 руб. <br/>в месяц' 'landing_page'}}</h1>
+		<div class="landing__container-in">
+			<i class="i i-inf"></i>
+			<h1 class="landing__h1">{{_ 'Гибкий, безлимитный <br/>хостинг от 27 руб. <br/>в месяц' 'landing_page'}}</h1>
+		</div>
 	</div>
 </section>
 <section class="landing-section landing-section2">
@@ -34,14 +38,12 @@
 		<div class="landing__block1">
 			<h3 class="landing__h3">{{_ 'Все включено' 'landing'}}</h3>
 			<a href="toggle" class="landing__toggler">
-				<span class="landing__toggler-t1">{{_ 'Без подробностей' 'landing'}}</span>
-				<span class="landing__toggler-widget"><div class="landing__toggler-pin"></div></span>
-				<span class="landing__toggler-t2">{{_ 'Технические детали' 'landing'}}</span>
+				<span class="landing__toggler-t1">{{_ 'Без подробностей' 'landing'}}</span><span class="landing__toggler-widget"><div class="landing__toggler-pin"></div></span><span class="landing__toggler-t2">{{_ 'Технические детали' 'landing'}}</span>
 			</a>
 			<ul class="landing__s3-list">
 				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Выделенные изолированные ресурсы' 'landing'}}</span></li>
 				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Кластерная облачная платформа' 'landing'}}</span></li>
-				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Поддержка PHP 4.4, 5.2, 5.3, 5.4, 5.5 версию PHP вы можете выбрать в любой момент в панели управления' 'landing'}}</span></li>
+				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Поддержка PHP 4.4, 5.2, 5.3, 5.4, 5.5' 'landing'}}</span><span class="landing__s3-itm-misc">{{_ 'версию PHP вы можете выбрать в любой момент в панели управления' 'landing'}}</span></li>
 				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Perl, Python, SSI' 'landing'}}</span></li>
 				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Базы данных MySQL, PostgreSQL' 'landing'}}</span></li>
 				<li><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Бесплатный неограниченный трафик' 'landing'}}</span></li>
@@ -59,7 +61,7 @@
 		<div class="landing__block2">
 			<i class="i i-cloud"></i>
 			<h4 class="landing__h3">{{_ 'Облачный хостинг' 'landing'}}</h4>
-			<p class="landing-p">{{_ 'Благодаря технологии CloudLinux мы не ограничиваем количество сайтов, почтовых аккаунтов и баз данных' 'landing'}}</p>
+			<p class="landing__p">{{_ 'Благодаря технологии CloudLinux мы не ограничиваем количество сайтов, почтовых аккаунтов и баз данных' 'landing'}}</p>
 		</div>
 	</div>
 </section>
@@ -86,7 +88,7 @@
 </section>
 <section class="landing-section landing-section6">
 	<div class="landing__container">
-		<h2 class="landing__h2">{{_ 'JustHost.ru — торговая марка компании Баксэт. С 2006 года на рынке хостинга' 'landing'}}</h2>
+		<h2 class="landing__h2">{{_ 'JustHost.ru — торговая марка компании Баксэт. С 2006 года на рынке хостинга' 'landing'}}</h2>
 		<div class="landing__s6-logos"><i class="i i-ripe"></i><i class="i i-anders"></i><i class="i i-ms"></i><i class="i i-rosnano"></i></div>
 		<div class="landing__s6-col1">
 			<p class="landing__p">{{_ 'Получена <a href="" target="_blank">лицензия МинСвязи РФ №87316</a> на телематические услуги связи' 'landing'}}</p>
@@ -102,7 +104,7 @@
 		</div>
 	</div>
 </section>
-<section class="landing-section landing-section6">
+<section class="landing-section landing-section7">
 	<div class="landing__container">
 		<h2 class="landing__h2">{{_ 'Только живые отзывы' 'landing'}}</h2>
 		<div class="landing__reviews">
@@ -118,7 +120,7 @@
 		</div>
 	</div>
 </section>
-<section class="landing-section landing-section7">
+<section class="landing-section landing-section8">
 	<div class="landing__container">
 		<h2 class="landing__h2">{{_ 'Начать работу с Justhost' 'landing'}}</h2>
 		<form class="landing__email-form">

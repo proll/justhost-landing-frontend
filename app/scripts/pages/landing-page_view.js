@@ -1,9 +1,10 @@
 jhst.LandingPageView = jhst.PageView.extend({
-	indent: 60,
 	$window: $(window),
 	events: {
 		'click .landing__start-a': 'showAuth',
-		'click .landing__next-a': 'goSection2'
+		'click .landing__next-a': 'goSection2',
+
+		'click .landing__toggler': 'toggleFeatures'
 	},
 
 
@@ -35,13 +36,9 @@ jhst.LandingPageView = jhst.PageView.extend({
 		this.$sec3 = this.$el.find('.landing-section3');
 		// this.$secs = this.$el.find('.landing-section');
 
+		this.$toggler = this.$el.find('.landing__toggler');
+
 		this.repositionPage();
-
-		this.$nav_how = $('.navbar__item-how>a');
-		this.$nav_where = $('.navbar__item-where>a');
-
-		this.$nav_how.on('click.landing', _.bind(this.goSection2, this));
-		this.$nav_where.on('click.landing', _.bind(this.goSection3, this));
 
 		this.delegateEvents();
 
@@ -58,10 +55,20 @@ jhst.LandingPageView = jhst.PageView.extend({
 		var h = 0,
 			ww = $(window).width();
 
-		h = this.$window.innerHeight() - this.indent;
-		var section_h = Math.max(h, 600);
+		h = this.$window.innerHeight();
+		var section_h = Math.max(h - 320, 560);
 		this.$sec1.height(section_h);
-		this.$sec2.css({'margin-top': section_h});
+		// this.$sec2.css({'margin-top': section_h});
+	},
+
+	toggleFeatures: function(e) {
+		if(e && e.preventDefault) {
+			e.preventDefault();
+		}
+
+		this.$toggler.toggleClass('toggle_on');
+
+		return false;
 	},
 
 	showAuth: function() {

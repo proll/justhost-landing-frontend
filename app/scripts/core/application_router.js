@@ -17,7 +17,7 @@ jhst.Router = Backbone.Router.extend({
 		'/': 'landing',
 		'.': 'landing',
 
-		'/unlimited/': 'landing',
+		'unlimited/': 'landing',
 
 		'404': 'er404',
 		'403': 'er403',

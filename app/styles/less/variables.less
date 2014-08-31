@@ -114,7 +114,7 @@
 
 // // tablet
 @gridColumnsTablet: 9;
-@gridRowWidthTablet: (@gridColumnsTablet * @gridColumnWidth) + (@gridGutterWidth * (@gridColumnsTablet - 1));
+@gridRowWidthTablet: (@gridColumnsTablet * @gridColumnWidth) + (@gridGutterWidth * @gridColumnsTablet);
 @gridRowMaxWidthPhone: @gridRowWidthTablet - 1;
 @gridRowMinWidthPhone: @gridRowWidthPhone - 1;
 
