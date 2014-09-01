@@ -68,7 +68,7 @@ jhst.LandingPageView = jhst.PageView.extend({
 			ww = $(window).width();
 
 		h = this.$window.innerHeight();
-		var section_h = Math.max(h - 320, 440);
+		var section_h = Math.max(h - 320, 180);
 		this.$sec1.height(section_h);
 		// this.$sec2.css({'margin-top': section_h});
 	},

@@ -1863,7 +1863,7 @@ textarea::-webkit-input-placeholder {
   margin: 0;
 }
 .landing__header {
-  background: #3072ba;
+  background: transparent;
   overflow: hidden;
   padding: 8px 0;
   -webkit-box-sizing: border-box;
@@ -1978,7 +1978,7 @@ textarea::-webkit-input-placeholder {
 }
 .landing-section1 .landing__container {
   display: table;
-  min-height: 440px;
+  min-height: 180px;
 }
 .landing-section1 .landing__container-in {
   display: table-cell;
