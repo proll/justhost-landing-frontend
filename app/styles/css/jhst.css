@@ -273,7 +273,7 @@ dd {
 }
 body {
   margin: 0;
-  font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: 'proxima_nova_rgregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #222a32;
@@ -476,11 +476,31 @@ a:focus {
   font-weight: normal;
   font-style: normal;
 }
+.font_light {
+  font-family: 'proxima_nova_ltlight';
+  font-weight: normal;
+}
+.font_regular {
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
+}
+.font_exbold {
+  font-family: 'proxima_nova_thextrabold';
+  font-weight: normal;
+}
+.font_bold {
+  font-family: 'proxima_nova_rgbold';
+  font-weight: normal;
+}
+.font_sebold {
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
+}
 HTML {
   height: 100%;
 }
 BODY {
-  font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: 'proxima_nova_rgregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #222a32;
@@ -1709,8 +1729,9 @@ textarea::-webkit-input-placeholder {
 }
 .feedback__h {
   padding: 0;
-  margin: 0 0 34px -1px;
-  font-weight: 700;
+  margin: 3px 0 32px -1px;
+  font-family: 'proxima_nova_thextrabold';
+  font-weight: normal;
   font-size: 34px;
   line-height: 1;
 }
@@ -1719,14 +1740,16 @@ textarea::-webkit-input-placeholder {
   margin: 0 0 23px;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
 }
 .feedback__p2 {
   padding: 0;
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .feedback__form {
   text-align: center;
@@ -1872,7 +1895,8 @@ textarea::-webkit-input-placeholder {
   color: #6bb8f8;
   font-size: 20px;
   line-height: 38px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
@@ -1880,7 +1904,8 @@ textarea::-webkit-input-placeholder {
   color: #6bb8f8;
   font-size: 13px;
   line-height: 1;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
@@ -1904,7 +1929,8 @@ textarea::-webkit-input-placeholder {
   background: #f4614e;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   color: #ffffff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1958,11 +1984,14 @@ textarea::-webkit-input-placeholder {
   display: inline-block;
   vertical-align: top;
   margin-top: 39px;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .landing__h1 {
   font-size: 32px;
   line-height: 38px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   text-align: left;
 }
 .landing-section2 {
@@ -1998,14 +2027,16 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 12px;
   line-height: 35px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   text-transform: uppercase;
 }
 .landing__s2_col1-in .landing__p {
   color: #ffffff;
   font-size: 22px;
   line-height: 32px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   margin: 11px 0;
 }
 .landing__s2_col2-in {
@@ -2019,22 +2050,25 @@ textarea::-webkit-input-placeholder {
 }
 .landing__s2_col2-in .landing__h2 {
   font-size: 46px;
-  line-height: 29px;
-  font-weight: 700;
+  line-height: 30px;
+  font-family: 'proxima_nova_thextrabold';
+  font-weight: normal;
   width: 200px;
 }
 .landing__s2_col2-in .landing__p {
   font-size: 20px;
   line-height: 22px;
-  font-weight: 400;
-  margin: 6px 0 32px;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
+  margin: 5px 0 33px;
 }
 .landing__s2_col2-a {
   color: #000000;
   text-decoration: underline;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   display: block;
 }
 .landing__s2_col2-a:hover,
@@ -2044,7 +2078,8 @@ textarea::-webkit-input-placeholder {
 }
 .landing__s2_col2-a mark {
   background: transparent;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   color: #0165d2;
 }
 .landing-section3 {
@@ -2076,7 +2111,8 @@ textarea::-webkit-input-placeholder {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   letter-spacing: 2px;
 }
 .landing__toggler {
@@ -2214,19 +2250,21 @@ textarea::-webkit-input-placeholder {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px 35px 35px 41px;
+  padding: 32px 35px 34px 40px;
 }
 .landing__block2 .landing__h3 {
   font-size: 17px;
   line-height: 20px;
-  font-weight: 700;
+  font-family: 'proxima_nova_thextrabold';
+  font-weight: normal;
   color: #ffffff;
   margin: 24px 0 5px;
 }
 .landing__block2 .landing__p {
   font-size: 15px;
   line-height: 20px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   color: #ffffff;
 }
 .landing-section4 {
@@ -2241,7 +2279,8 @@ textarea::-webkit-input-placeholder {
 .landing-section4 .landing__h2 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000000;
@@ -2250,7 +2289,8 @@ textarea::-webkit-input-placeholder {
 .landing-section4 .landing__p {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
+  font-family: 'proxima_nova_ltlight';
+  font-weight: normal;
   color: #000000;
   width: 450px;
 }
@@ -2273,7 +2313,8 @@ textarea::-webkit-input-placeholder {
 .landing__s5-col1 .landing__h3 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000000;
@@ -2282,7 +2323,8 @@ textarea::-webkit-input-placeholder {
 .landing__s5-col1 .landing__p {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
+  font-family: 'proxima_nova_ltlight';
+  font-weight: normal;
   color: #6e7882;
 }
 .landing__s5-col2 {
@@ -2291,7 +2333,8 @@ textarea::-webkit-input-placeholder {
 .landing__s5-col2 .landing__p {
   font-size: 11px;
   line-height: 28px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2322,7 +2365,8 @@ textarea::-webkit-input-placeholder {
 .landing-section6 .landing__h2 {
   font-size: 18px;
   line-height: 32px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ffffff;
@@ -2331,7 +2375,8 @@ textarea::-webkit-input-placeholder {
 .landing-section6 .landing__p {
   font-size: 15px;
   line-height: 22px;
-  font-weight: 300;
+  font-family: 'proxima_nova_ltlight';
+  font-weight: normal;
   color: #ffffff;
   margin-bottom: 22px;
 }
@@ -2369,7 +2414,8 @@ textarea::-webkit-input-placeholder {
 .landing-section7 .landing__h2 {
   font-size: 18px;
   line-height: 32px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000000;
@@ -2423,7 +2469,8 @@ textarea::-webkit-input-placeholder {
 .landing__review .landing__p {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 300;
+  font-family: 'proxima_nova_ltlight';
+  font-weight: normal;
   letter-spacing: 2px;
   color: #16a373;
   text-align: center;
@@ -2439,13 +2486,15 @@ textarea::-webkit-input-placeholder {
 .landing__review-author {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   color: #000000;
 }
 .landing__review-a {
   font-size: 12px;
   line-height: 28px;
-  font-weight: 400;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
   color: #329de8;
   display: block;
 }
@@ -2464,11 +2513,13 @@ textarea::-webkit-input-placeholder {
 .landing-section8 .landing__h2 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500;
+  font-family: 'proxima_nova_ltsemibold';
+  font-weight: normal;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 41px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+  margin-bottom: 39px;
 }
 .landing__email-form {
   display: block;
