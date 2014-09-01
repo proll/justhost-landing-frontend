@@ -615,6 +615,8 @@
 				left: 0;
 				bottom: 0;
 				padding-top: 13px;
+				background: @white;
+				z-index: 1;
 			}
 
 			.landing__review-right {
@@ -623,6 +625,8 @@
 				right: 0;
 				bottom: 0;
 				padding-top: 13px;
+				background: @white;
+				z-index: 1;
 			}
 
 			.landing__review-list {
@@ -637,18 +641,21 @@
 					padding: 0 120px;
 					position: relative;
 					width: 100%;
-					height: 174px;
+					height: 174px + 64px;
 					display: inline-block;
 					.box-sizing(border-box);
+					vertical-align: top;
+					.transition(margin .3s);
 					
 					.landing__p {
 						font-size:   18px;
 						line-height: 28px;
-						font-weight: 400;
+						font-weight: 300;
 						letter-spacing: 2px;
 						color: #16a373;
 						text-align: center;
 						margin: 0 0 10px;
+						white-space: normal;
 					}
 				}
 
@@ -703,8 +710,10 @@
 				text-align: center;
 				background: @white;
 				width: 410px;
-				padding: 6px 10px 6px;
+				padding: 4px 10px 4px;
+				border: 2px solid @white;
 				font-size: 15px;
+				.transition(border .4s);
 			}
 
 			.landing__email-submit {
@@ -727,6 +736,12 @@
 				padding: 0;
 				margin: 0;
 			}
+
+.error {
+	.landing__email-inp {
+		border-color: #f4614e;
+	}
+}
 
 .landing__footer {
 	min-width: 960px;

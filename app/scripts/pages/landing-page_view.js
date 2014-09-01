@@ -1,7 +1,16 @@
 jhst.LandingPageView = jhst.PageView.extend({
 	$window: $(window),
 	events: {
-		'click .landing__toggler': 'toggleFeatures'
+		'click .landing__toggler': 'toggleFeatures',
+
+		'click .landing__header-btn': 'showFeedback',
+		'click .landing__s2_col2-a': 'showFeedback',
+
+		'click .landing__review-right': 'slideRight',
+		'click .landing__review-left': 'slideLeft',
+
+		'submit .landing__email-form': 'submit',
+		'keypress .landing__email-inp': 'hideErrors',
 	},
 
 
@@ -30,12 +39,16 @@ jhst.LandingPageView = jhst.PageView.extend({
 		jhst.on('scroll', this.fixHeader, this);
 
 		this.$window.on('resize.landing.page', _.bind(this.repositionPage, this));
-		this.$sec1 = this.$el.find('.landing-section1');
-		this.$sec2 = this.$el.find('.landing-section2');
-		this.$sec3 = this.$el.find('.landing-section3');
-		this.$toggler = this.$el.find('.landing__toggler');
-		// this.$secs = this.$el.find('.landing-section');
 
+		this.$sec1 = 	this.$el.find('.landing-section1');
+		this.$toggler = this.$el.find('.landing__toggler');
+
+		var $slideItems = this.$el.find('.landing__review');
+		this.slide_cnt = $slideItems.length;
+		this.$slideItem = $slideItems.eq(0);
+		this.slide_width = this.$slideItem.outerWidth();
+
+		this.$input_email = this.$el.find('.landing__email-inp');
 
 		this.repositionPage();
 
@@ -77,6 +90,87 @@ jhst.LandingPageView = jhst.PageView.extend({
 
 	fixHeader: function(pos_obj) {
 		this.$el.toggleClass('scrolled', (pos_obj.s_top > 80));
+	},
+
+	showFeedback: function(e) {
+		if(e && e.preventDefault) {
+			e.preventDefault();
+		}
+
+		this.order = new jhst.Feedback();
+
+		return false;
+	},
+
+	slideRight: function(e) {
+		if(e && e.preventDefault) {
+			e.preventDefault();
+		}
+
+		var num = this.$slideItem.data('num') || 0;
+		if(num+1 < this.slide_cnt) {
+			num = num + 1;
+		} else {
+			num = 0;
+		}
+
+		this.$slideItem
+			.data('num', num)
+			.css({
+				'margin-left': -this.slide_width * num
+			});
+
+		return false;	
+	},
+
+	slideLeft: function(e) {
+		if(e && e.preventDefault) {
+			e.preventDefault();
+		}
+
+		var num = this.$slideItem.data('num') || 0;
+		if(num-1 > -1) {
+			num = num - 1;
+		} else {
+			num = this.slide_cnt-1;
+		}
+
+		this.$slideItem
+			.data('num', num)
+			.css({
+				'margin-left': -this.slide_width * num
+			});
+
+		return false;
+	},
+
+
+	submit: function (e) {
+		this.hideErrors();
+
+		var email = 	$.trim(this.$input_email.val());
+		// validation
+		if(!_.isEmail(email)) {
+			this.showError()
+		} else if (email.length > 50){
+			this.showError()
+		} else {
+			return true;
+		}
+		e.preventDefault();
+		e.stopPropagation();
+		return false;
+	},
+
+	showError: function(txt, input_name) {
+		this.$input_email.focus();
+		this.$el.toggleClass('error', true);
+		return true;
+	},
+	
+	hideErrors: function() {
+		this.$el.toggleClass('error', false);
+		return true;
 	},
 
 

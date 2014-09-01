@@ -193,10 +193,10 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</p>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section7\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Только живые отзывы", "landing", options) : helperMissing.call(depth0, "_", "Только живые отзывы", "landing", options)))
-    + "</h2>\n		<div class=\"landing__reviews\">\n			<a href=\"left\" class=\"landing__review-left\"><i class=\"i i-arr-l\"></i></a>\n			<ul class=\"landing__review-list\">\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Цены, качество, скорость ответа техподдержки - на высшем уровне!<br/>Приятно впечатлили - сразу видно профессионализм! <br/>Советую и рекомендую.»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Виталий</span>\n						<a class=\"landing__review-a\" target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Цены, качество, скорость ответа техподдержки - на высшем уровне!<br/>Приятно впечатлили - сразу видно профессионализм! <br/>Советую и рекомендую.»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Виталий</span>\n						<a class=\"landing__review-a\"  target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n			</ul>\n			<a href=\"right\" class=\"landing__review-right\"><i class=\"i i-arr-r\"></i></a>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section8\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
+    + "</h2>\n		<div class=\"landing__reviews\">\n			<a href=\"left\" class=\"landing__review-left\"><i class=\"i i-arr-l\"></i></a>\n			<ul class=\"landing__review-list\">\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Оборудование было размещено предельно быстро, после чего были некие проблемы с моим ПО, с решением которых мне безотказно и оперативно помогла тех. поддержка. Очень благодарен данному хостингу, и не на секунду не пожалел что выбрал именно его!»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Владислав Ладьин</span>\n						<a class=\"landing__review-a\" target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«За всё время обслуживания не заметил ни одной проблемы. Всё на высшем уровне за умеренную плату. К ним перешел с другого Vps (не буду рекламировать) и ни капли не жалею, так как это первый мой удачный хостинг без преувеличения. Очень благодарен ребятам из тех поддержки, выручали не один раз»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Артём Бирковский</span>\n						<a class=\"landing__review-a\"  target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Отлично работают ребята. Тех.поддержка, вообще работает на 5 баллов. Скорость работы сайтов приятно радует. Ушел от прежнего хостера и перенес несколько сайтов на JustHost»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Рябов Дмитрий</span>\n						<a class=\"landing__review-a\"  target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Хороший понятный хостинг. Техподдержка отвечает очень быстро и помогает разобраться буквально онлайн. Мне помогли разместить сайт и даже помогли внести исправления в PHP скрипты сайта. Очень доволен!	»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Игорь Николаевич</span>\n						<a class=\"landing__review-a\"  target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n			</ul>\n			<a href=\"right\" class=\"landing__review-right\"><i class=\"i i-arr-r\"></i></a>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section8\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Начать работу с Justhost", "landing", options) : helperMissing.call(depth0, "_", "Начать работу с Justhost", "landing", options)))
-    + "</h2>\n		<form class=\"landing__email-form\">\n			<input type=\"text\" class=\"landing__email-inp\" placeholder=\"";
+    + "</h2>\n		<form class=\"landing__email-form\" method=\"post\" action=\"/auth/new\">\n			<input type=\"text\" class=\"landing__email-inp\" placeholder=\"";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Введите емайл", "landing", options) : helperMissing.call(depth0, "_", "Введите емайл", "landing", options)))
     + "\">\n			<button class=\"landing__email-submit\">";
@@ -294,43 +294,31 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 this["jhst"]["Templates"]["ptemplates"]["popups/feedback"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, stack2, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function";
+  var buffer = "", stack1, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  buffer += "<div class=\"feedback__cont\">\n	<div class=\"feedback__s1\">\n		<h2 class=\"feedback__s1-h\">";
+  buffer += "<div class=\"feedback__cont\">\n	<a href=\"\" class=\"feedback__close\"><i class=\"i i-x\"></i></a>\n	<div class=\"feedback__s\">\n		<h2 class=\"feedback__h\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Let us help you", "feedback", options) : helperMissing.call(depth0, "_", "Let us help you", "feedback", options)))
-    + "</h2>\n		<form action=\"/feedback\" class=\"feedback__s1-form\">\n			<div class=\"qst__inp-group\">\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Дарим месяц <br/>хостинга за каждый <br/>перенесенный <br/>к нам сайт!", "feedback", options) : helperMissing.call(depth0, "_", "Дарим месяц <br/>хостинга за каждый <br/>перенесенный <br/>к нам сайт!", "feedback", options)))
+    + "</h2>\n		<p class=\"feedback__p\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "call", "feedback", options) : helperMissing.call(depth0, "_", "call", "feedback", options)))
-    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input type=\"text\" class=\"qst__inp\" maxlength=\"100\" name=\"name\" value=\"";
-  if (stack2 = helpers.name) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
-  else { stack2 = depth0.name; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
-  buffer += escapeExpression(stack2)
-    + "\">\n						</div>\n					</label>\n				</div>\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "При переносе к нам 1 сайта вы получите 1 месяц хостинга, а 12 либо более —<br/> целый год бесплатного хостинга!", "feedback", options) : helperMissing.call(depth0, "_", "При переносе к нам 1 сайта вы получите 1 месяц хостинга, а 12 либо более —<br/> целый год бесплатного хостинга!", "feedback", options)))
+    + "</p>\n		<p class=\"feedback__p2\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "phone", "feedback", options) : helperMissing.call(depth0, "_", "phone", "feedback", options)))
-    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input  type=\"tel\" class=\"qst__inp\" maxlength=\"100\" name=\"phone\" value=\"";
-  if (stack2 = helpers.phone) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
-  else { stack2 = depth0.phone; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
-  buffer += escapeExpression(stack2)
-    + "\">\n						</div>\n					</label>\n				</div>\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Для участия в акции необходимо лишь зарегистрироваться и в течении 15 дней перенести к нам на хостинг ваши сайты. Переносом будет считаться указание наших NS в Namesever ваших доменов.", "feedback", options) : helperMissing.call(depth0, "_", "Для участия в акции необходимо лишь зарегистрироваться и в течении 15 дней перенести к нам на хостинг ваши сайты. Переносом будет считаться указание наших NS в Namesever ваших доменов.", "feedback", options)))
+    + "</p>\n		<p class=\"feedback__p2\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "email", "feedback", options) : helperMissing.call(depth0, "_", "email", "feedback", options)))
-    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input type=\"text\" class=\"qst__inp\" maxlength=\"100\" name=\"email\" value=\"";
-  if (stack2 = helpers.email) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
-  else { stack2 = depth0.email; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
-  buffer += escapeExpression(stack2)
-    + "\">\n						</div>\n					</label>\n				</div>\n			</div>\n			<input type=\"submit\" class=\"feedback__s1-submit-hidden\">\n			<div class=\"feedback__s1-submit\">\n				<span class=\"feedback__s1-submit-error\"></span>\n				<a href=\"/payments\" rel=\"nofollow\" class=\"feedback__s1-submit-a\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Домены должны находиться на наших NS все время действия бесплатного периода.", "feedback", options) : helperMissing.call(depth0, "_", "Домены должны находиться на наших NS все время действия бесплатного периода.", "feedback", options)))
+    + "</p>\n		<form action=\"/auth/new\" class=\"feedback__form\" method=\"post\">\n			<input type=\"text\" class=\"feedback__email\" maxlength=\"100\" name=\"email\" placeholder=\"";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Send request", "feedback", options) : helperMissing.call(depth0, "_", "Send request", "feedback", options)))
-    + "</a>\n			</div>\n		</form>\n	</div>\n	<div class=\"feedback__s2\">\n		<i class=\"i i-fb-ok\"></i>\n		<h2 class=\"feedback__s2-h\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Введите емайл", "feedback", options) : helperMissing.call(depth0, "_", "Введите емайл", "feedback", options)))
+    + "\">\n			<button class=\"feedback__submit\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "finish", "feedback", options) : helperMissing.call(depth0, "_", "finish", "feedback", options)))
-    + "</h2>\n		<div class=\"feedback__s2-submit\">\n			<a href=\"/payments\" rel=\"nofollow\" class=\"feedback__s2-submit-a\">";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Подключиться к Justhost.ru", "feedback", options) : helperMissing.call(depth0, "_", "Подключиться к Justhost.ru", "feedback", options)))
+    + "</button>\n		</form>\n		<p class=\"feedback__p3\">";
   options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Close", "feedback", options) : helperMissing.call(depth0, "_", "Close", "feedback", options)))
-    + "</a>\n		</div>\n	</div>\n</div>";
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Тестовый период 15 дней", "feedback", options) : helperMissing.call(depth0, "_", "Тестовый период 15 дней", "feedback", options)))
+    + "</p>\n	</div>\n</div>";
   return buffer;
   });
 
