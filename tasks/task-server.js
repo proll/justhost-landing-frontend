@@ -36,10 +36,10 @@ module.exports = function(grunt) {
 			//if /api/ called proxying to API
 			function(req, res, next){
 				var requestedPath = url.parse(req.url).pathname;
-				if(requestedPath.indexOf("/v1/") == 0){
+				if(requestedPath.indexOf("/img/") == 0){
 				console.log(requestedPath);	
 					proxy.proxyRequest(req, res, {
-						host: "jhstoq.me",
+						host: "justhost.ru",
 						port: 80
 					});
 					return false;

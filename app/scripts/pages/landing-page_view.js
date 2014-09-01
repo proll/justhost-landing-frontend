@@ -1,9 +1,6 @@
 jhst.LandingPageView = jhst.PageView.extend({
 	$window: $(window),
 	events: {
-		'click .landing__start-a': 'showAuth',
-		'click .landing__next-a': 'goSection2',
-
 		'click .landing__toggler': 'toggleFeatures'
 	},
 
@@ -30,13 +27,15 @@ jhst.LandingPageView = jhst.PageView.extend({
 		this.trigger("page:render", this.model);
 		this.trigger("enterDocument", this.model);
 
+		jhst.on('scroll', this.fixHeader, this);
+
 		this.$window.on('resize.landing.page', _.bind(this.repositionPage, this));
 		this.$sec1 = this.$el.find('.landing-section1');
 		this.$sec2 = this.$el.find('.landing-section2');
 		this.$sec3 = this.$el.find('.landing-section3');
+		this.$toggler = this.$el.find('.landing__toggler');
 		// this.$secs = this.$el.find('.landing-section');
 
-		this.$toggler = this.$el.find('.landing__toggler');
 
 		this.repositionPage();
 
@@ -66,7 +65,7 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 
-		this.$toggler.toggleClass('toggle_on');
+		this.$el.toggleClass('toggle_on');
 
 		return false;
 	},
@@ -76,21 +75,13 @@ jhst.LandingPageView = jhst.PageView.extend({
 		return false;
 	},
 
-	goSection2: function(e) {
-		$('html, body').animate({
-			 scrollTop: this.$sec2.offset().top - this.indent
-		}, 780);
-		return false;
+	fixHeader: function(pos_obj) {
+		this.$el.toggleClass('scrolled', (pos_obj.s_top > 80));
 	},
 
-	goSection3: function(e) {
-		$('html, body').animate({
-			 scrollTop: this.$sec3.offset().top - this.indent
-		}, 780);
-		return false;
-	},
 
 	sleep: function() {
+		jhst.off(null, null, this);
 		this.$nav_how.off('click.landing');
 		this.$nav_where.off('click.landing');
 		this.$window.off('resize.landing.page');

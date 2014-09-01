@@ -70,52 +70,73 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</span><span class=\"landing__toggler-widget\"><div class=\"landing__toggler-pin\"></div></span><span class=\"landing__toggler-t2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Технические детали", "landing", options) : helperMissing.call(depth0, "_", "Технические детали", "landing", options)))
-    + "</span>\n			</a>\n			<ul class=\"landing__s3-list\">\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span>\n			</a>\n			<ul class=\"landing__s3-list\">\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Бесплатный неограниченный трафик", "landing", options) : helperMissing.call(depth0, "_", "Бесплатный неограниченный трафик", "landing", options)))
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Выделенные изолированные ресурсы", "landing", options) : helperMissing.call(depth0, "_", "Выделенные изолированные ресурсы", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Без тарифов, всё включено", "landing", options) : helperMissing.call(depth0, "_", "Без тарифов, всё включено", "landing", options)))
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Кластерная облачная платформа", "landing", options) : helperMissing.call(depth0, "_", "Кластерная облачная платформа", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Используйте бесплатно 15 дней", "landing", options) : helperMissing.call(depth0, "_", "Используйте бесплатно 15 дней", "landing", options)))
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Работают все популярные CMS", "landing", options) : helperMissing.call(depth0, "_", "Работают все популярные CMS", "landing", options)))
+    + "</span></li>\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Повышенная безопасность", "landing", options) : helperMissing.call(depth0, "_", "Повышенная безопасность", "landing", options)))
+    + "</span></li>\n				<li class=\"more adv\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Поддержка PHP 4.4, 5.2, 5.3, 5.4, 5.5", "landing", options) : helperMissing.call(depth0, "_", "Поддержка PHP 4.4, 5.2, 5.3, 5.4, 5.5", "landing", options)))
     + "</span><span class=\"landing__s3-itm-misc\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "версию PHP вы можете выбрать в любой момент в панели управления", "landing", options) : helperMissing.call(depth0, "_", "версию PHP вы можете выбрать в любой момент в панели управления", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Любое количество сайтов и баз данных", "landing", options) : helperMissing.call(depth0, "_", "Любое количество сайтов и баз данных", "landing", options)))
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Perl, Python, SSI", "landing", options) : helperMissing.call(depth0, "_", "Perl, Python, SSI", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"less\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Мягкая добрая техподдержка", "landing", options) : helperMissing.call(depth0, "_", "Мягкая добрая техподдержка", "landing", options)))
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Базы данных MySQL, PostgreSQL", "landing", options) : helperMissing.call(depth0, "_", "Базы данных MySQL, PostgreSQL", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Бесплатный неограниченный трафик", "landing", options) : helperMissing.call(depth0, "_", "Бесплатный неограниченный трафик", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Доступ по протоколу SSH (shell)", "landing", options) : helperMissing.call(depth0, "_", "Доступ по протоколу SSH (shell)", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Паролирование директорий", "landing", options) : helperMissing.call(depth0, "_", "Паролирование директорий", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Поддержка выделенных IP-адресов (50 руб./шт.)", "landing", options) : helperMissing.call(depth0, "_", "Поддержка выделенных IP-адресов (50 руб./шт.)", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Поддержка SSL-сертификатов", "landing", options) : helperMissing.call(depth0, "_", "Поддержка SSL-сертификатов", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Файловый менеджер в панели управления", "landing", options) : helperMissing.call(depth0, "_", "Файловый менеджер в панели управления", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Автоматическое и ручное резервное копирование", "landing", options) : helperMissing.call(depth0, "_", "Автоматическое и ручное резервное копирование", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Система статистики Webalizer", "landing", options) : helperMissing.call(depth0, "_", "Система статистики Webalizer", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Веб-интерфейс для работы с почтой IonCube", "landing", options) : helperMissing.call(depth0, "_", "Веб-интерфейс для работы с почтой IonCube", "landing", options)))
-    + "</span></li>\n				<li><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Техническая поддержка 24 / 7 / 365", "landing", options) : helperMissing.call(depth0, "_", "Техническая поддержка 24 / 7 / 365", "landing", options)))
     + "</span></li>\n			</ul>\n		</div>\n		<div class=\"landing__block2\">\n			<i class=\"i i-cloud\"></i>\n			<h4 class=\"landing__h3\">";
@@ -172,7 +193,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</p>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section7\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Только живые отзывы", "landing", options) : helperMissing.call(depth0, "_", "Только живые отзывы", "landing", options)))
-    + "</h2>\n		<div class=\"landing__reviews\">\n			<a href=\"left\" class=\"landing__review-left\"><i class=\"i i-arr-l\"></i></a>\n			<ul class=\"landing__review-list\">\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Цены, качество, скорость ответа техподдержки - на высшем уровне!<br/Приятно впечатлили - сразу видно профессионализм! <br/>Советую и рекомендую.»</p>\n					<span class=\"landing__review-author\">— Виталий</span>\n					<a class=\"landing__review-a\">http://hostdb.ru/providers/opinions/id/59</a>\n				</li>\n			</ul>\n			<a href=\"right\" class=\"landing__review-right\"><i class=\"i i-arr-r\"></i></a>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section8\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
+    + "</h2>\n		<div class=\"landing__reviews\">\n			<a href=\"left\" class=\"landing__review-left\"><i class=\"i i-arr-l\"></i></a>\n			<ul class=\"landing__review-list\">\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Цены, качество, скорость ответа техподдержки - на высшем уровне!<br/>Приятно впечатлили - сразу видно профессионализм! <br/>Советую и рекомендую.»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Виталий</span>\n						<a class=\"landing__review-a\" target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n				<li class=\"landing__review\">\n					<p class=\"landing__p\">«Цены, качество, скорость ответа техподдержки - на высшем уровне!<br/>Приятно впечатлили - сразу видно профессионализм! <br/>Советую и рекомендую.»</p>\n					<div class=\"landing__review-desc\">\n						<span class=\"landing__review-author\">— Виталий</span>\n						<a class=\"landing__review-a\"  target=\"_blank\" href=\"http://hostdb.ru/providers/opinions/id/59\">http://hostdb.ru/providers/opinions/id/59</a>\n					</div>\n				</li>\n			</ul>\n			<a href=\"right\" class=\"landing__review-right\"><i class=\"i i-arr-r\"></i></a>\n		</div>\n	</div>\n</section>\n<section class=\"landing-section landing-section8\">\n	<div class=\"landing__container\">\n		<h2 class=\"landing__h2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Начать работу с Justhost", "landing", options) : helperMissing.call(depth0, "_", "Начать работу с Justhost", "landing", options)))
     + "</h2>\n		<form class=\"landing__email-form\">\n			<input type=\"text\" class=\"landing__email-inp\" placeholder=\"";
@@ -184,7 +205,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</button>\n			<p class=\"landing__email-desc\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Тестовый период 15 дней", options) : helperMissing.call(depth0, "_", "Тестовый период 15 дней", options)))
-    + "</p>\n		</form>\n	</div>\n</section>";
+    + "</p>\n		</form>\n	</div>\n</section>\n<footer class=\"landing__footer\">\n	<div class=\"services__partners\">\n		<ul>\n			<li><a href=\"http://www.paypal.com/\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/paypal.gif\" border=\"0\"></a></li>\n			<li><a href=\"http://www.directadmin.com/\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/directadmin-logo.gif\" border=\"0\"></a></li>\n			<li><a href=\"http://www.nic.ru/\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/ru-center4.gif\" border=\"0\"></a></li>\n			<li><a href=\"http://www.assist.ru/\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/assist-logo.gif\" border=\"0\"></a></li>\n			<li><a href=\"http://www.paymaster.ru/\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/paymaster-logo.png\" style=\"height: 25px;\" border=\"0\"></a></li>\n			<li><a href=\"http://www.microsoft.com/ru-ru/hosting/licensing/splabenefits.aspx\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/ms-spla.jpg\" border=\"0\"></a></li>\n			<li><a href=\"https://www.ripe.net/membership/indices/data/ru.bxtgroup.html\" title=\"LLC Baxet\" target=\"_blank\" rel=\"nofollow\"><img src=\"/img/partners/ncc-member-logo.png\" border=\"0\"></a></li>\n			<li><a target=\"_blank\" href=\"http://ipv6-test.com\" rel=\"nofollow\">\n					<img src=\"/img/partners/ipv6-small.png\" border=\"0\" alt=\"IPv6 Ready\"></a></li>\n		</ul>\n	</div>\n	<div class=\"cut-line\"></div>\n	<div class=\"footer\">\n		<div class=\"footer__links_blocks_handler\">\n			<ul>\n				<li><a href=\"http://www.facebook.com/Justhostru\" target=\"_blank\" class=\"facebook\" rel=\"nofollow\"><img src=\"/img/site/fb.png\"></a></li>\n	<!--            <li style=\"padding-left: 19px;\">\n					<a href=\"http://hostdb.ru\" title=\"Портал о хостинге и хостинг-провайдерах.\" target=\"_blank\"><img src=\"https://hostdb.ru/get_logo.php?id=59&type=1\" alt=\"Портал о хостинге и хостинг-провайдерах.\" width=\"88\" height=\"31\" border=\"0\"></a>\n				</li>-->\n			</ul>\n\n			<ul>\n				<li class=\"footer__links_header\">О Компании</li>\n				<li><a target=\"_self\" href=\"/kb/about\">Лицензии</a></li>\n				<li><a target=\"_self\" href=\"/support\">Контакты</a></li>\n				<li><a target=\"_self\" href=\"/kb/recv\">Реквизиты</a></li>\n				<li><a target=\"_self\" href=\"/kb/billing\">Способы оплаты</a></li>\n				<li><a target=\"_self\" href=\"/kb/jobs\">Вакансии</a></li>\n			</ul>\n\n			<ul>\n				<li class=\"footer__links_header\">Мы предлагаем</li>\n				<li><a target=\"_self\" href=\"/services/hosting\" rel=\"nofollow\">Хостинг и реселлинг</a></li>\n				<li><a target=\"_self\" href=\"/services/vps\" rel=\"nofollow\">Виртуальные серверы</a></li>\n				<li><a target=\"_self\" href=\"/services/dedic\" rel=\"nofollow\">Выделенные серверы</a></li>\n				<li><a target=\"_self\" href=\"/services/colo\" rel=\"nofollow\">Размещение оборудования</a></li>\n				<li><a target=\"_self\" href=\"/services/compare\" rel=\"nofollow\">Подобрать решение</a></li>\n				<li></li>\n			</ul>\n\n			<ul>\n				<li class=\"footer__links_header\">Поддержка</li>\n				<li><a target=\"_self\" href=\"/kb/docs\">Документы</a></li>\n				<li><a target=\"_self\" href=\"/kb/\">База знаний</a></li>\n				<li><a target=\"_self\" href=\"/support\">Обращение в службу поддержки</a></li>\n			</ul>\n		</div>\n\n		<div class=\"footer__version\">© 2006-2014 JustHost.ru</div>\n	</div>\n	\n</footer>";
   return buffer;
   });
 
@@ -267,6 +288,49 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   else { stack1 = depth0.error_title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
     + "</p>";
+  return buffer;
+  });
+
+this["jhst"]["Templates"]["ptemplates"]["popups/feedback"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function";
+
+
+  buffer += "<div class=\"feedback__cont\">\n	<div class=\"feedback__s1\">\n		<h2 class=\"feedback__s1-h\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Let us help you", "feedback", options) : helperMissing.call(depth0, "_", "Let us help you", "feedback", options)))
+    + "</h2>\n		<form action=\"/feedback\" class=\"feedback__s1-form\">\n			<div class=\"qst__inp-group\">\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "call", "feedback", options) : helperMissing.call(depth0, "_", "call", "feedback", options)))
+    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input type=\"text\" class=\"qst__inp\" maxlength=\"100\" name=\"name\" value=\"";
+  if (stack2 = helpers.name) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.name; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n						</div>\n					</label>\n				</div>\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "phone", "feedback", options) : helperMissing.call(depth0, "_", "phone", "feedback", options)))
+    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input  type=\"tel\" class=\"qst__inp\" maxlength=\"100\" name=\"phone\" value=\"";
+  if (stack2 = helpers.phone) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.phone; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n						</div>\n					</label>\n				</div>\n				<div class=\"qst__inp-cont\">\n					<label>\n						<span class=\"qst__lbl\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "email", "feedback", options) : helperMissing.call(depth0, "_", "email", "feedback", options)))
+    + "</span>\n						<div class=\"qst__inp-cont-in\">\n							<input type=\"text\" class=\"qst__inp\" maxlength=\"100\" name=\"email\" value=\"";
+  if (stack2 = helpers.email) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.email; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n						</div>\n					</label>\n				</div>\n			</div>\n			<input type=\"submit\" class=\"feedback__s1-submit-hidden\">\n			<div class=\"feedback__s1-submit\">\n				<span class=\"feedback__s1-submit-error\"></span>\n				<a href=\"/payments\" rel=\"nofollow\" class=\"feedback__s1-submit-a\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Send request", "feedback", options) : helperMissing.call(depth0, "_", "Send request", "feedback", options)))
+    + "</a>\n			</div>\n		</form>\n	</div>\n	<div class=\"feedback__s2\">\n		<i class=\"i i-fb-ok\"></i>\n		<h2 class=\"feedback__s2-h\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "finish", "feedback", options) : helperMissing.call(depth0, "_", "finish", "feedback", options)))
+    + "</h2>\n		<div class=\"feedback__s2-submit\">\n			<a href=\"/payments\" rel=\"nofollow\" class=\"feedback__s2-submit-a\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Close", "feedback", options) : helperMissing.call(depth0, "_", "Close", "feedback", options)))
+    + "</a>\n		</div>\n	</div>\n</div>";
   return buffer;
   });
 

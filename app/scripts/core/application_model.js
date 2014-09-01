@@ -16,10 +16,10 @@ jhst.App = Backbone.Model.extend({
 		this.pages 	= new jhst.PagesCollection;
 
 
-		this.user = new jhst.User;
-		jhst.user = this.user;
+		// this.user = new jhst.User;
+		// jhst.user = this.user;
 		
-		this.auth = new jhst.Auth;
+		// this.auth = new jhst.Auth;
 
 		
 		// GLOBAL objects
@@ -203,21 +203,21 @@ jhst.App = Backbone.Model.extend({
 		 * USER AUTH EVENTS
 		 */
 
-		this.auth.on('auth:success', function (user_obj) {
-			jhst.trigger('auth:success', user_obj);
-			console.log(this.router.current_route)
-			if(this.router.current_route  !== 'profile' 
-				&& (
-					this.router.current_route  === 'landing' 
-				 || this.router.current_route  === ''
-				 )
-			) {
-				jhst.navigate('/items', {trigger: true});
-			}
-		}, this);
-		this.auth.on('auth:clear', function () {
-			jhst.trigger('auth:clear');
-		}, this);
+		// this.auth.on('auth:success', function (user_obj) {
+		// 	jhst.trigger('auth:success', user_obj);
+		// 	console.log(this.router.current_route)
+		// 	if(this.router.current_route  !== 'profile' 
+		// 		&& (
+		// 			this.router.current_route  === 'landing' 
+		// 		 || this.router.current_route  === ''
+		// 		 )
+		// 	) {
+		// 		jhst.navigate('/items', {trigger: true});
+		// 	}
+		// }, this);
+		// this.auth.on('auth:clear', function () {
+		// 	jhst.trigger('auth:clear');
+		// }, this);
 
 		/**
 		 * Scroll handler
