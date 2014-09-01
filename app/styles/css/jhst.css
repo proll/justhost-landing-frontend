@@ -1778,6 +1778,8 @@ textarea::-webkit-input-placeholder {
   -moz-transition: border 0.4s;
   -o-transition: border 0.4s;
   transition: border 0.4s;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .feedback__submit {
   background-color: transparent;
@@ -1803,6 +1805,8 @@ textarea::-webkit-input-placeholder {
   width: 324px;
   display: block;
   margin: 20px auto 8px;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .feedback__p3 {
   color: #88bbf0;
@@ -1811,6 +1815,8 @@ textarea::-webkit-input-placeholder {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .error .feedback__email {
   border-color: #f4614e;
@@ -1828,6 +1834,8 @@ textarea::-webkit-input-placeholder {
   text-align: center;
   color: #ffffff;
   z-index: 2;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .landing__container {
   height: 100%;
@@ -2549,6 +2557,8 @@ textarea::-webkit-input-placeholder {
   -moz-transition: border 0.4s;
   -o-transition: border 0.4s;
   transition: border 0.4s;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .landing__email-submit {
   background-color: transparent;
@@ -2574,6 +2584,8 @@ textarea::-webkit-input-placeholder {
   width: 224px;
   display: block;
   margin: 30px auto 8px;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .landing__email-desc {
   color: #7c929f;
@@ -2581,6 +2593,8 @@ textarea::-webkit-input-placeholder {
   line-height: 30px;
   padding: 0;
   margin: 0;
+  font-family: 'proxima_nova_rgregular';
+  font-weight: normal;
 }
 .error .landing__email-inp {
   border-color: #f4614e;
