@@ -1836,6 +1836,7 @@ textarea::-webkit-input-placeholder {
   z-index: 2;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
+  min-width: 960px;
 }
 .landing__container {
   height: 100%;
