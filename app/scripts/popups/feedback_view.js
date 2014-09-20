@@ -54,6 +54,7 @@ jhst.FeedbackView = Backbone.View.extend({
 		}
 		e.preventDefault();
 		e.stopPropagation();
+		jhst.app.statistic.trackLandingBtnPup();
 		return false;
 	},
 
@@ -65,6 +66,7 @@ jhst.FeedbackView = Backbone.View.extend({
 	showError: function(txt, input_name) {
 		this.$input_email.focus();
 		this.$el.toggleClass('error', true);
+		jhst.app.statistic.trackLandingSubmitError();
 		return true;
 	},
 	

@@ -2006,8 +2006,7 @@ textarea::-webkit-input-placeholder {
   transition: background 0.2s;
 }
 .landing__header-btn:hover,
-.landing__header-btn:active,
-.landing__header-btn:visited {
+.landing__header-btn:active {
   background: #d05342;
 }
 .scrolled .landing__header {
@@ -2173,8 +2172,7 @@ textarea::-webkit-input-placeholder {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-.landing__s2_col2-a:hover,
-.landing__s2_col2-a:visited {
+.landing__s2_col2-a:hover {
   color: #e8492f;
   text-decoration: underline;
 }
@@ -2227,8 +2225,7 @@ textarea::-webkit-input-placeholder {
   text-decoration: none;
   padding: 12px 0 11px;
 }
-.landing__toggler:hover,
-.landing__toggler:visited {
+.landing__toggler:hover {
   text-decoration: none;
   color: #000000;
 }
@@ -2526,9 +2523,7 @@ textarea::-webkit-input-placeholder {
   text-decoration: none;
 }
 .landing__s6-col1 a:hover,
-.landing__s6-col2 a:hover,
-.landing__s6-col1 a:visited,
-.landing__s6-col2 a:visited {
+.landing__s6-col2 a:hover {
   color: #ffd75d;
   text-decoration: underline;
 }

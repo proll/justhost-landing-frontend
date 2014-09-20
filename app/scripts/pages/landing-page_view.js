@@ -3,8 +3,8 @@ jhst.LandingPageView = jhst.PageView.extend({
 	events: {
 		'click .landing__toggler': 'toggleFeatures',
 
-		'click .landing__header-btn': 'showFeedback',
-		'click .landing__s2_col2-a': 'showFeedback',
+		'click .landing__header-btn': 'showFeedback1',
+		'click .landing__s2_col2-a': 'showFeedback2',
 
 		'click .landing__review-right': 'slideRight',
 		'click .landing__review-left': 'slideLeft',
@@ -78,6 +78,9 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 
+		if(!this.$el.hasClass('toggle_on')) {
+			jhst.app.statistic.trackLandingDetails();
+		}
 		this.$el.toggleClass('toggle_on');
 
 		return false;
@@ -92,14 +95,26 @@ jhst.LandingPageView = jhst.PageView.extend({
 		this.$el.toggleClass('scrolled', (pos_obj.s_top > 80));
 	},
 
-	showFeedback: function(e) {
+	showFeedback1: function(e) {
 		if(e && e.preventDefault) {
 			e.preventDefault();
 		}
-
-		this.order = new jhst.Feedback();
-
+		jhst.app.statistic.trackLandingBtn1();
+		this.showFeedback(e);
 		return false;
+	},
+
+	showFeedback2: function(e) {
+		if(e && e.preventDefault) {
+			e.preventDefault();
+		}
+		jhst.app.statistic.trackLandingBtn2();
+		this.showFeedback(e);
+		return false;
+	},
+
+	showFeedback: function(e) {
+		this.order = new jhst.Feedback();
 	},
 
 	slideRight: function(e) {
@@ -159,12 +174,14 @@ jhst.LandingPageView = jhst.PageView.extend({
 		}
 		e.preventDefault();
 		e.stopPropagation();
+		jhst.app.statistic.trackLandingBtn3();
 		return false;
 	},
 
 	showError: function(txt, input_name) {
 		this.$input_email.focus();
 		this.$el.toggleClass('error', true);
+		jhst.app.statistic.trackLandingSubmitError();
 		return true;
 	},
 	
@@ -176,8 +193,6 @@ jhst.LandingPageView = jhst.PageView.extend({
 
 	sleep: function() {
 		jhst.off(null, null, this);
-		this.$nav_how.off('click.landing');
-		this.$nav_where.off('click.landing');
 		this.$window.off('resize.landing.page');
 		this.undelegateEvents();
 	}

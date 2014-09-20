@@ -22,81 +22,44 @@ jhst.Statistic = Backbone.Model.extend({
 			window._gaq.push(['_trackPageview', str]);
 		}
 		
-		if(window.yaCounter22431070) {
-			window.yaCounter22431070.hit(jhst.root + str);
+		if(window.yaCounter26254773) {
+			window.yaCounter26254773.hit(jhst.root + str);
 		}
 	},
 
-
-	trackRegistration: function() {
+	trackLandingDetails: function() {
 		if(!this.active) return false;
-		window._gaq.push(['_trackEvent', 'User', 'registration']);
-		window.yaCounter22431070.reachGoal('User_registration');
+		window._gaq.push(['_trackEvent', 'Landing', 'show_details']);
+		window.yaCounter26254773.reachGoal('Landing_show_details');
 	},
 
-	trackProductCreate: function(name){
+	trackLandingBtn1: function() {
 		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'Product', 'create', name]);
-		window.yaCounter22431070.reachGoal('Product_create');
-	},
-	trackPSConnect: function(name){
-		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'PaySystem', 'connect', name]);
-		window.yaCounter22431070.reachGoal('PaySystem_connect');
-	},
-	
-	
-
-	trackProductTryToBuy: function(name){
-		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'Product', 'trytobuy', name]);
-		window.yaCounter22431070.reachGoal('Product_trytobuybuy');
+		window._gaq.push(['_trackEvent', 'Landing', 'click_btn_1']);
+		window.yaCounter26254773.reachGoal('Landing_click_btn_1');
 	},
 
-
-	trackFeedback: function(name){
+	trackLandingBtn2: function() {
 		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'Feedback', 'send', name]);
-		window.yaCounter22431070.reachGoal('Feedback_send');
+		window._gaq.push(['_trackEvent', 'Landing', 'click_btn_2']);
+		window.yaCounter26254773.reachGoal('Landing_click_btn_2');
 	},
 
-
-	trackOpenBusinessFeedback: function(name){
+	trackLandingBtn3: function() {
 		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'BusinessFeedback', 'open', name]);
-		window.yaCounter22431070.reachGoal('BusinessFeedback_open');
+		window._gaq.push(['_trackEvent', 'Landing', 'click_btn_3']);
+		window.yaCounter26254773.reachGoal('Landing_click_btn_3');
 	},
 
-	trackBusinessFeedback: function(name){
+	trackLandingBtnPup: function() {
 		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'BusinessFeedback', 'send', name]);
-		window.yaCounter22431070.reachGoal('BusinessFeedback_send');
+		window._gaq.push(['_trackEvent', 'Landing', 'click_btn_pup']);
+		window.yaCounter26254773.reachGoal('Landing_click_btn_pup');
 	},
 
-	trackProductSold: function(name){
+	trackLandingSubmitError: function() {
 		if(!this.active) return false;
-		if(!name) {
-			name = 'unnamed'
-		}
-		window._gaq.push(['_trackEvent', 'Product', 'sold', name]);
-		window.yaCounter22431070.reachGoal('Product_sold');
+		window._gaq.push(['_trackEvent', 'Landing', 'submit_error']);
+		window.yaCounter26254773.reachGoal('Landing_submit_error');
 	},
 });
