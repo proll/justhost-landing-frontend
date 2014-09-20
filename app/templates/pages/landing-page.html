@@ -1,11 +1,12 @@
 <header class="landing__header">
 	<div class="container">
 		<div class="landing__header-info">
-			<p class="landing__header-info-p1">8 800 100 6009</p>
+			<p class="landing__header-info-p1">8 800 100 60 09</p>
 			<p class="landing__header-info-p2">{{_ 'Лицензия №87316' 'landing'}}</p>
 		</div>
 		<a href="/" target="_self" class="landing__logo-a"><div class="landing__logo"></div></a>
 		<div class="landing__header-btn-cont">
+			<p class="landing__header-btn-p">8 800 100 60 09</p>
 			<button class="landing__header-btn">{{_ 'Заказать хостинг' 'landing'}}</button>
 		</div>
 	</div>
@@ -14,7 +15,7 @@
 	<div class="landing__container">
 		<div class="landing__container-in">
 			<i class="i i-inf"></i>
-			<h1 class="landing__h1">{{_ 'Хостинг без тарифов, от 27 руб. в месяц' 'landing_page'}}</h1>
+			<h1 class="landing__h1">{{_ 'Хостинг без тарифов, от 27 рублей<br/> в месяц' 'landing_page'}}</h1>
 		</div>
 	</div>
 </section>
@@ -22,13 +23,16 @@
 	<div class="landing__s2_col1">
 		<div class="landing__s2_col1-in">
 			<h2 class="landing__h2">{{_ 'Тарифы?' 'landing'}}</h2>
-			<p class="landing__p">{{_ 'В JustHost.ru нет тарифов — просто развивайтесь, а хостинг подстроится под ваши потребности автоматически. Оплата только за фактически использованный объем дискового пространства.' 'landing'}}</p>
+			<p class="landing__p">{{_ 'В JustHost.ru нет тарифов — оплата по факту использования дискового пространства. Всё остальное без ограничений. Тарификация раз в сутки.' 'landing'}}</p>
+			<p class="landing__misc">{{_ 'Например, если у вас в течении месяца объем файлов увеличивается на 30 Мб каждый день, то суммарно, к концу месяца, вы заплатите за хостинг 41 руб.' 'landing'}}</p>
 		</div>
 	</div>
 	<div class="landing__s2_col2">
 		<div class="landing__s2_col2-in">
-			<h2 class="landing__h2">{{_ '90+0.09 копеек' 'landing'}}</h2>
-			<p class="landing__p">{{_ 'за мегабайт в день' 'landing'}}</p>
+			<h2 class="landing__h2">{{_ '90 копеек' 'landing'}}</h2>
+			<p class="landing__p">{{_ 'в день' 'landing'}}</p>
+			<h2 class="landing__h3">{{_ '+ <i class="i i-onetenth"></i> <span>копейки</span>' 'landing'}}</h2>
+			<p class="landing__p">{{_ 'за 1 мегабайт' 'landing'}}</p>
 			<a href="register" class="landing__s2_col2-a">{{_ 'Получите <mark>бесплатно</mark> до 12 месяцев хостинга за перенос сайтов!' 'landing'}}</a>
 		</div>
 	</div>
@@ -41,6 +45,7 @@
 				<span class="landing__toggler-t1">{{_ 'Без подробностей' 'landing'}}</span><span class="landing__toggler-widget"><div class="landing__toggler-pin"></div></span><span class="landing__toggler-t2">{{_ 'Технические детали' 'landing'}}</span>
 			</a>
 			<ul class="landing__s3-list">
+				<li class="less"><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Удобная панель управления' 'landing'}}</span></li>
 				<li class="more"><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Панель DirectAdmin' 'landing'}}</span></li>
 				<li class="less"><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Бесплатный неограниченный трафик' 'landing'}}</span></li>
 				<li class="more"><i class="i i-chk"></i><span class="landing__s3-itm">{{_ 'Выделенные изолированные ресурсы' 'landing'}}</span></li>
@@ -67,9 +72,16 @@
 			</ul>
 		</div>
 		<div class="landing__block2">
-			<i class="i i-cloud"></i>
-			<h4 class="landing__h3">{{_ 'Облачный хостинг' 'landing'}}</h4>
-			<p class="landing__p">{{_ 'Благодаря технологии CloudLinux мы не ограничиваем количество сайтов, почтовых аккаунтов и баз данных' 'landing'}}</p>
+			<div class="landing__block2-in1">
+				<i class="i i-cloud"></i>
+				<h4 class="landing__h3">{{_ 'Облачный хостинг' 'landing'}}</h4>
+				<p class="landing__p">{{_ 'Благодаря технологии CloudLinux мы не ограничиваем количество сайтов, почтовых аккаунтов и баз данных. Более того, за счет виртуализации окружения каждого пользователя, многократно повышается уровень безопасности.' 'landing'}}</p>
+			</div>
+			<div class="landing__block2-in2">
+				<i class="i i-server"></i>
+				<h4 class="landing__h3">{{_ 'Вычислительные ресурсы' 'landing'}}</h4>
+				<p class="landing__p">{{_ 'Каждому пользователю выделяется виртуальный компьютер со следующими параметрами: 2 Ггц процессор и 1 Гигабайт памяти для процессов (например, ваших PHP-скриптов)' 'landing'}}</p>
+			</div>
 		</div>
 	</div>
 </section>
