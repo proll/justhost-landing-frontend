@@ -507,6 +507,8 @@ BODY {
   margin: 0;
   padding: 0;
   background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 #wrapper {
   margin: 0 auto;
@@ -1927,6 +1929,7 @@ textarea::-webkit-input-placeholder {
   width: 140px;
   height: 40px;
   background: url(/images/bg/logo.png);
+  background: url(/images/bg/logo.svg);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -2021,6 +2024,7 @@ textarea::-webkit-input-placeholder {
   width: 121px;
   height: 33px;
   background: url(/images/bg/logo_.png);
+  background: url(/images/bg/logo_.svg);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -2095,7 +2099,7 @@ textarea::-webkit-input-placeholder {
   padding-right: 40px;
 }
 .landing__s2_col1-in .landing__h2 {
-  color: #ffffff;
+  color: #bcbec0;
   font-size: 12px;
   line-height: 35px;
   font-family: 'proxima_nova_rgregular';
@@ -2111,12 +2115,12 @@ textarea::-webkit-input-placeholder {
   margin: 11px 0;
 }
 .landing__s2_col1-in .landing__misc {
-  color: #ffffff;
+  color: #bcbec0;
   font-size: 13px;
   line-height: 20px;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
-  margin: 28px 0 0;
+  margin: 18px 0 0;
 }
 .landing__s2_col2-in {
   width: 320px;
