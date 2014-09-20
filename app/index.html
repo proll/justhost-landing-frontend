@@ -9,7 +9,7 @@
 	<meta property="og:title" content="Justhost" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" id="og_image" content="http://justhost.ru/images_static/fav144.png" />
-	<meta property="og:url" id="og_url" content="http://justhost.ru" />
+	<meta property="og:url" id="og_url" content="http://justhost.ru/unlimited/" />
 	<meta property="og:site_name" content="Justhost" />
 	<meta property="og:description" content="Хостинг без тарифов, от 27 руб. в месяц"/>
 	
@@ -161,7 +161,7 @@ if(!_.browser.phantom) {
 	//analytics do not load on test
 	(function() {
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 
