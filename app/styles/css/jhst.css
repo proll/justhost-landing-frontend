@@ -1698,10 +1698,10 @@ textarea::-webkit-input-placeholder {
   border: 0 none;
   background-color: #4e8bbd;
   background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(-145deg, #3f599e, #4e8bbd);
-  background-image: -webkit-linear-gradient(-145deg, #3f599e, #4e8bbd);
-  background-image: -o-linear-gradient(-145deg, #3f599e, #4e8bbd);
-  background-image: linear-gradient(-145deg, #3f599e, #4e8bbd);
+  background-image: -moz-linear-gradient(110deg, #3f599e, #4e8bbd);
+  background-image: -webkit-linear-gradient(110deg, #3f599e, #4e8bbd);
+  background-image: -o-linear-gradient(110deg, #3f599e, #4e8bbd);
+  background-image: linear-gradient(110deg, #3f599e, #4e8bbd);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -1807,6 +1807,13 @@ textarea::-webkit-input-placeholder {
   margin: 20px auto 8px;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.feedback__submit:hover {
+  background: #d05342;
 }
 .feedback__p3 {
   color: #88bbf0;
@@ -1887,8 +1894,8 @@ textarea::-webkit-input-placeholder {
   display: inline-block;
 }
 .landing__logo {
-  width: 138px;
-  height: 38px;
+  width: 140px;
+  height: 40px;
   background: url(/images/bg/logo.png);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -1946,6 +1953,15 @@ textarea::-webkit-input-placeholder {
   border-radius: 4px;
   padding: 4px 13px;
   margin: 3px 0 0;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.landing__header-btn:hover,
+.landing__header-btn:active,
+.landing__header-btn:visited {
+  background: #d05342;
 }
 .scrolled .landing__header {
   background: #ffffff;
@@ -1995,6 +2011,7 @@ textarea::-webkit-input-placeholder {
   margin-top: 39px;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
+  width: 328px;
 }
 .landing__h1 {
   font-size: 32px;
@@ -2079,10 +2096,14 @@ textarea::-webkit-input-placeholder {
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
   display: block;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .landing__s2_col2-a:hover,
 .landing__s2_col2-a:visited {
-  color: #000000;
+  color: #e8492f;
   text-decoration: underline;
 }
 .landing__s2_col2-a mark {
@@ -2144,6 +2165,13 @@ textarea::-webkit-input-placeholder {
   line-height: 2;
   color: #000000;
   vertical-align: top;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.landing__toggler-t1:hover {
+  color: #e8492f;
 }
 .landing__toggler-widget {
   display: inline-block;
@@ -2185,8 +2213,18 @@ textarea::-webkit-input-placeholder {
   line-height: 2;
   color: #1096ed;
   vertical-align: top;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.landing__toggler-t2:hover {
+  color: #1096ed;
 }
 .toggle_on .landing__toggler-t1 {
+  color: #1096ed;
+}
+.toggle_on .landing__toggler-t1:hover {
   color: #1096ed;
 }
 .toggle_on .landing__toggler-widget:before {
@@ -2195,6 +2233,9 @@ textarea::-webkit-input-placeholder {
 }
 .toggle_on .landing__toggler-t2 {
   color: #000000;
+}
+.toggle_on .landing__toggler-t2:hover {
+  color: #e8492f;
 }
 .landing__s3-list {
   display: block;
@@ -2478,9 +2519,8 @@ textarea::-webkit-input-placeholder {
 .landing__review .landing__p {
   font-size: 18px;
   line-height: 28px;
-  font-family: 'proxima_nova_ltlight';
+  font-family: 'proxima_nova_rgregular';
   font-weight: normal;
-  letter-spacing: 2px;
   color: #16a373;
   text-align: center;
   margin: 0 0 10px;
@@ -2587,6 +2627,9 @@ textarea::-webkit-input-placeholder {
   margin: 30px auto 8px;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
+}
+.transition(background .2s) .landing__email-submit:hover {
+  background: #d05342;
 }
 .landing__email-desc {
   color: #7c929f;

@@ -2,20 +2,18 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Justhost</title>
-	<meta name="description" content="Создание виртуальных ценников и прием платежей за ваш контент или реальные товары и услуги">
+	<title>Justhost — честный хостинг</title>
+	<meta name="description" content="Хостинг без тарифов, от 27 руб. в месяц">
 
 	<!-- Facebook -->
 	<meta property="og:title" content="Justhost" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" id="og_image" content="http://jhstoq.me/images_static/fav144.png" />
-	<meta property="og:url" id="og_url" content="http://jhstoq.me/" />
+	<meta property="og:image" id="og_image" content="http://justhost.ru/images_static/fav144.png" />
+	<meta property="og:url" id="og_url" content="http://justhost.ru" />
 	<meta property="og:site_name" content="Justhost" />
-	<meta property="og:description" content="Создание виртуальных ценников и прием платежей за ваш контент или реальные товары и услуги"/>
+	<meta property="og:description" content="Хостинг без тарифов, от 27 руб. в месяц"/>
 	
-	<meta content="@jhstoq" property="twitter:site" />
-	<meta name='yandex-verification' content='57c86eb3316a8818' />
-
+	<meta content="@servancho" property="twitter:site" />
 
 
 	<!-- Mobile readiness tags -->
@@ -157,6 +155,36 @@ if(!_.browser.phantom) {
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34226923-1']);
+	_gaq.push(['_trackPageview']);
+	//analytics do not load on test
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	(function (d, w, c) {
+	    (w[c] = w[c] || []).push(function() {
+	        try {
+	            w.yaCounter26254773 = new Ya.Metrika({id:26254773,
+	                    clickmap:true,
+	                    accurateTrackBounce:true});
+	        } catch(e) { }
+	    });
+
+	    var n = d.getElementsByTagName("script")[0],
+	        s = d.createElement("script"),
+	        f = function () { n.parentNode.insertBefore(s, n); };
+	    s.type = "text/javascript";
+	    s.async = true;
+	    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+	    if (w.opera == "[object Opera]") {
+	        d.addEventListener("DOMContentLoaded", f, false);
+	    } else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
 }
 </script>
 </body>

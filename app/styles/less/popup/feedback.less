@@ -6,7 +6,7 @@
 	.popup__inner {
 		width: 640px;
 		border: 0 none;
-		#gradient>.directional(#3f599e, #4e8bbd, -145deg);
+		#gradient>.directional(#3f599e, #4e8bbd, 110deg);
 		.border-radius(10px);
 		.box-shadow(0 0 65px rgba(0,0,0,.2));
 	}
@@ -89,6 +89,10 @@
 				display: block;
 				margin: 20px auto 8px;
 				.font_regular;
+				.transition(background .2s);
+				&:hover {
+					background: #d05342;
+				}
 			}
 
 		&__p3 {

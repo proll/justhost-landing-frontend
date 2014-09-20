@@ -57,8 +57,8 @@
 			display: inline-block;
 		}
 			.landing__logo {
-				width: 276px/2;
-				height: 76px/2;
+				width: 280px/2;
+				height: 80px/2;
 				background: url(/images/bg/logo.png);
 				.background-size(100% 100%);
 			}
@@ -101,6 +101,12 @@
 				.border-radius(4px);
 				padding: 4px 13px;
 				margin: 3px 0 0;
+				.transition(background .2s);
+				&:hover,
+				&:active,
+				&:visited {
+					background: #d05342;
+				}
 			}
 
 	.scrolled {
@@ -153,6 +159,7 @@
 			vertical-align: top;
 			margin-top: 39px;
 			.font_regular;
+			width: 328px;
 		}
 	}
 
@@ -239,10 +246,11 @@
 					line-height: 18px;
 					.font_regular;
 					display: block;
+					.transition(color .2s);
 
 					&:hover,
 					&:visited {
-						color: @black;
+						color: #e8492f;
 						text-decoration: underline;
 					}
 
@@ -310,6 +318,11 @@
 					line-height: 2;
 					color: @black;
 					vertical-align: top;
+					.transition(color .2s);
+
+					&:hover {
+						color: #e8492f;
+					}
 				}
 				
 				.landing__toggler-widget {
@@ -345,11 +358,19 @@
 					line-height: 2;
 					color: #1096ed;
 					vertical-align: top;
+					.transition(color .2s);
+
+					&:hover {
+						color: #1096ed;
+					}
 				}
 
 				.toggle_on {
 					.landing__toggler-t1 {
 						color: #1096ed;
+						&:hover {
+							color: #1096ed;
+						}
 					}
 
 					.landing__toggler-widget {
@@ -361,7 +382,10 @@
 
 					.landing__toggler-t2 {
 						color: @black;
-					}					
+						&:hover {
+							color: #e8492f;
+						}
+					}
 				}
 
 			.landing__s3-list {
@@ -653,8 +677,8 @@
 					.landing__p {
 						font-size:   18px;
 						line-height: 28px;
-						.font_light;
-						letter-spacing: 2px;
+						.font_regular;
+						// letter-spacing: 1px;
 						color: #16a373;
 						text-align: center;
 						margin: 0 0 10px;
@@ -733,6 +757,10 @@
 				display: block;
 				margin: 30px auto 8px;
 				.font_regular;
+				.transition(background .2s)
+				&:hover {
+					background: #d05342;
+				}
 			}
 
 			.landing__email-desc {
