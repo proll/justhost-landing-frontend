@@ -2055,7 +2055,7 @@ textarea::-webkit-input-placeholder {
 .landing-section1 .landing__h1 {
   display: inline-block;
   vertical-align: top;
-  margin-top: 39px;
+  margin-top: 28px;
   font-family: 'proxima_nova_rgregular';
   font-weight: normal;
   width: 328px;
@@ -2356,6 +2356,10 @@ textarea::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+}
+.landing__s3-itm strong {
+  font-family: 'proxima_nova_rgbold';
+  font-weight: normal;
 }
 .landing__s3-itm-misc {
   font-size: 13px;
