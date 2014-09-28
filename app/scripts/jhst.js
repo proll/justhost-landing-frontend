@@ -224,3 +224,8 @@ $(document).ready(function(){
 
 	// $(document).on('keyup', function(e){console.log(e)})
 });
+
+
+window.onerror = function(message, file, line) {
+  _gaq.push(['_trackEvent', "Landing", "Exception",  file + "(" + line + "): " + message + ':' + location.search])
+}
