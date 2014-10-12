@@ -250,7 +250,7 @@ module.exports = function(grunt) {
 		'clean:dist',
 		'useminPrepare',
 		'imagemin',
-		// 'svgmin',
+		'svgmin',
 		'htmlmin:dist',
 
 
