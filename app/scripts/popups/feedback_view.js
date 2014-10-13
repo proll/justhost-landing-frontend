@@ -15,7 +15,7 @@ jhst.FeedbackView = Backbone.View.extend({
 
 	initialize: function(options){
 		this.model = options.model;
-		this.template = jhst.Templates.get(this.template);
+		this.template = jhst.Templates.get(this.model.get('template') || this.template);
 		this.render();
 	},
 

@@ -68,7 +68,8 @@ jhst.LandingPageView = jhst.PageView.extend({
 			ww = $(window).width();
 
 		h = this.$window.innerHeight();
-		var section_h = Math.max(h - 320, 180);
+		var section_h = Math.max(h - 250, 230);
+		section_h = Math.min(section_h, 500);
 		this.$sec1.height(section_h);
 		// this.$sec2.css({'margin-top': section_h});
 	},
@@ -100,7 +101,7 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 		jhst.app.statistic.trackLandingBtn1();
-		this.showFeedback(e);
+		this.showFeedback({template: 'popups/registration'});
 		return false;
 	},
 
@@ -109,12 +110,12 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 		jhst.app.statistic.trackLandingBtn2();
-		this.showFeedback(e);
+		this.showFeedback({template: 'popups/feedback'});
 		return false;
 	},
 
-	showFeedback: function(e) {
-		this.order = new jhst.Feedback();
+	showFeedback: function(params) {
+		this.order = new jhst.Feedback(params);
 	},
 
 	slideRight: function(e) {

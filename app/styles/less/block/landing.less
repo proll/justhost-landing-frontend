@@ -189,7 +189,7 @@
 	.landing-section2 {
 		background: url(/images/bg/s2.jpg);
 		.background-size(cover);
-		height: 320px;
+		height: 250px;
 		min-width: 960px;
 	}
 
@@ -213,7 +213,7 @@
 			.landing__s2_col1-in {
 				width: 960px-320px-40px;
 				float: right;
-				padding-top: 53px;
+				padding-top: 35px;
 				padding-right: 40px;
 
 				.landing__h2 {
@@ -227,7 +227,7 @@
 				.landing__p {
 					color: @white;
 					font-size: 22px;
-					line-height: 32px;
+					line-height: 30px;
 					.font_bold;
 					margin: 11px 0;
 				}
@@ -237,7 +237,7 @@
 					font-size: 13px;
 					line-height: 20px;
 					.font_regular;
-					margin: 18px 0 0;
+					margin: 21px 0 0;
 				}
 			}
 
@@ -245,7 +245,7 @@
 				width: 320px;
 				.box-sizing(border-box);
 				float: left;
-				padding: 99px 0 0 78px;
+				padding: 61px 0 0 78px;
 				color: @black;
 				
 				.landing__h2 {
@@ -258,7 +258,7 @@
 					font-size: 20px;
 					line-height: 22px;
 					.font_regular;
-					margin: 7px 0 18px;
+					margin: 7px 0 27px;
 				}
 
 				.i {
@@ -310,7 +310,7 @@
 	.landing-section3 {
 		#gradient>.directional(#394278, #8bced4, -146deg);
 		text-align: left;
-		padding: 80px 0;
+		padding: 40px 0;
 	}
 
 		.landing__block1,
@@ -533,12 +533,12 @@
 
 	.landing-section4 {
 		background: @white;
-		padding: 90px 0;
+		padding: 62px 0 58px;
 		text-align: left;
 
 		.i-clnd {
 			float: left;
-			margin: 0 93px 0 84px;
+			margin: 0 20px 0 148px;
 		}
 
 		.landing__h2 {
@@ -548,7 +548,7 @@
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			color: @black;
-			margin: 0 0 14px;
+			margin: 0 0 9px;
 		}
 
 		.landing__p {
@@ -567,7 +567,7 @@
 	.landing-section5 {
 		background: #f9fafc;
 		text-align: left;
-		padding: 91px 0 72px;
+		padding: 64px 0 48px;
 	}
 
 		.landing__s5-col1,
@@ -585,7 +585,7 @@
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				color: @black;
-				margin: 0 0 14px;		
+				margin: 0 0 9px;
 			}
 			.landing__p {
 				font-size: 16px;
@@ -596,7 +596,7 @@
 		}
 
 		.landing__s5-col2 {
-			margin-top: 43px;
+			margin-top: 38px;
 			.landing__p {
 				font-size: 11px;
 				line-height: 28px;
@@ -622,7 +622,7 @@
 		text-align: left;
 		.landing__container {
 			.box-sizing(border-box);
-			padding: 90px 80px 70px;
+			padding: 70px 80px 50px;
 		}
 
 			.landing__h2 {
@@ -670,7 +670,7 @@
 
 	.landing-section7 {
 		background: @white;
-		padding: 90px 0 90px;
+		padding: 57px 0 43px;
 
 		.landing__h2 {
 			font-size:   18px;
@@ -763,11 +763,16 @@
 						}
 
 						.landing__review-a {
+							.transition(color .2s);
 							font-size:   12px;
 							line-height: 28px;
 							.font_regular;
 							color: #329de8;
 							display: block;
+
+							&:hover {
+								color: #e8492f;
+							}
 						}
 
 	.landing-section8 {
@@ -834,6 +839,42 @@
 				.font_regular;
 			}
 
+	.landing-section9 {
+		background: @white;
+		padding: 53px 0 35px;
+		text-align: left;
+		overflow: visible;
+
+		.i-star {
+			float: left;
+			margin: -133px 0 0 80px;
+		}
+
+		.landing__h2 {
+			font-size: 18px;
+			line-height: 30px;
+			.font_sebold;	
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #249bff;
+			margin: 0 0 17px;
+		}
+
+		.landing__p {
+			font-size: 16px;
+			line-height: 22px;
+			.font_light;
+			color: @black;
+			margin-bottom: 26px;
+			width: 450px;
+		}
+	}
+
+		.landing__s9-col {
+			margin-left: 280px;
+			width: 550px;
+		}
+
 .error {
 	.landing__email-inp {
 		border-color: #f4614e;
@@ -844,10 +885,9 @@
 	min-width: 960px;
 
 	.services__partners {
-		border-top: #f1f1f1 solid 1px;
 		padding-top: 15px;
 		text-align: center;
-		margin: 45px auto 10px;
+		margin: -1px auto 10px;
 		max-width: 1080px;
 	}
 

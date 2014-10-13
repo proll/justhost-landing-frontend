@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /items/
-Disallow: /item/
-Disallow: /user/
-Disallow: /profile/
-Disallow: /auth
-Disallow: /logout
