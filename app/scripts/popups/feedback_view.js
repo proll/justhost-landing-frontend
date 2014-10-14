@@ -15,6 +15,7 @@ jhst.FeedbackView = Backbone.View.extend({
 
 	initialize: function(options){
 		this.model = options.model;
+
 		this.template = jhst.Templates.get(this.model.get('template') || this.template);
 		this.render();
 	},
@@ -54,7 +55,7 @@ jhst.FeedbackView = Backbone.View.extend({
 		}
 		e.preventDefault();
 		e.stopPropagation();
-		jhst.app.statistic.trackLandingBtnPup();
+		jhst.app.statistic.trackLandingBtnPup(this.model.get('metric'));
 		return false;
 	},
 

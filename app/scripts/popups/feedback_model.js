@@ -10,9 +10,6 @@ jhst.Feedback = Backbone.Model.extend({
 
 	initialize: function (){
 		this.view = new jhst.FeedbackView({model: this});
-		if(this.get('business_statistics')) {
-			qst.app.statistic.trackOpenBusinessFeedback();
-		}
 	},
 
 	fetch: function(data) {

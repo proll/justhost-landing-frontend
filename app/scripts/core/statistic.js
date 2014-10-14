@@ -51,10 +51,15 @@ jhst.Statistic = Backbone.Model.extend({
 		window.yaCounter26609061.reachGoal('Landing_click_btn_3');
 	},
 
-	trackLandingBtnPup: function() {
+	trackLandingBtnPup: function(metric) {
 		if(!this.active) return false;
-		window._gaq.push(['_trackEvent', 'Landing', 'click_btn_pup']);
-		window.yaCounter26609061.reachGoal('Landing_click_btn_pup');
+		if(metric === 'feedback') {
+			window._gaq.push(['_trackEvent', 'Landing', 'click_btn_pup']);
+			window.yaCounter26609061.reachGoal('Landing_click_btn_pup');
+		} else {
+			window._gaq.push(['_trackEvent', 'Landing', 'click_btn_pup_reg']);
+			window.yaCounter26609061.reachGoal('Landing_click_btn_pup_reg');
+		}
 	},
 
 	trackLandingSubmitError: function() {

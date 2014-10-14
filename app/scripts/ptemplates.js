@@ -37,10 +37,10 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  buffer += "<header class=\"landing__header\">\n	<div class=\"container\">\n		<div class=\"landing__header-info\">\n			<p class=\"landing__header-info-p1\">8 800 100 60 09, +7 495 668 09 03</p>\n			<p class=\"landing__header-info-p2\">";
+  buffer += "<header class=\"landing__header\">\n	<div class=\"container\">\n		<div class=\"landing__header-info\">\n			<p class=\"landing__header-info-p1\">\n				<span class=\"landing__phone-col\">\n					<span class=\"landing_phone-city\">Россия</span>\n					8 800 100 60 09\n				</span>\n				<span class=\"landing__phone-col\">\n					<span class=\"landing_phone-city\">Москва</span>\n					+7 495 668 09 03\n				</span>\n			</p>\n			<p class=\"landing__header-info-p2\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Лицензия №87316", "landing", options) : helperMissing.call(depth0, "_", "Лицензия №87316", "landing", options)))
-    + "</p>\n		</div>\n		<a href=\"/\" target=\"_self\" class=\"landing__logo-a\"><div class=\"landing__logo\"></div></a>\n		<div class=\"landing__header-btn-cont\">\n			<p class=\"landing__header-btn-p\">8 800 100 60 09, +7 495 668 09 03</p>\n			<button class=\"landing__header-btn\">";
+    + "</p>\n		</div>\n		<a href=\"/\" target=\"_self\" class=\"landing__logo-a\"><div class=\"landing__logo\"></div></a>\n		<div class=\"landing__header-btn-cont\">\n			<p class=\"landing__header-btn-p\">\n				<span class=\"landing__phone-col\">\n					<span class=\"landing_phone-city\">Россия</span>\n					8 800 100 60 09\n				</span>\n				<span class=\"landing__phone-col\">\n					<span class=\"landing_phone-city\">Москва</span>\n					+7 495 668 09 03\n				</span>\n			</p>\n			<button class=\"landing__header-btn\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Заказать хостинг", "landing", options) : helperMissing.call(depth0, "_", "Заказать хостинг", "landing", options)))
     + "</button>\n		</div>\n	</div>\n</header>\n<section class=\"landing-section landing-section1\">\n	<div class=\"landing__container\">\n		<div class=\"landing__container-in\">\n			<i class=\"i i-inf\"></i>\n			<h1 class=\"landing__h1\">";

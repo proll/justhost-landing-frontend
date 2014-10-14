@@ -101,7 +101,10 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 		jhst.app.statistic.trackLandingBtn1();
-		this.showFeedback({template: 'popups/registration'});
+		this.showFeedback({
+			metric: 'feedback', 
+			template: 'popups/registration'
+		});
 		return false;
 	},
 
@@ -110,7 +113,10 @@ jhst.LandingPageView = jhst.PageView.extend({
 			e.preventDefault();
 		}
 		jhst.app.statistic.trackLandingBtn2();
-		this.showFeedback({template: 'popups/feedback'});
+		this.showFeedback({
+			metric: 'feedback', 
+			template: 'popups/feedback'
+		});
 		return false;
 	},
 

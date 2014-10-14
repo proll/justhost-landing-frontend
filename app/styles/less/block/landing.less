@@ -39,7 +39,7 @@
 	.landing__header {
 		background: transparent;
 		overflow: hidden;
-		padding: 8px 0;
+		padding: 9px 0 8px;
 		.box-sizing(border-box);
 		position: absolute;
 		left: 0;
@@ -71,20 +71,42 @@
 		}
 
 			.landing__header-info-p1 {
-				color: #6bb8f8;
-				font-size: 20px;
-				line-height: 38px;
-				.font_sebold;
+				color: #82c6ff;
 				padding: 0;
 				margin: 0;
+				font-size: 0;
+				.landing__phone-col {
+					font-size: 20px;
+				}
 			}
+
+				.landing__phone-col {
+					display: inline-block;
+					font-size: 17px;
+					line-height: 20px;
+					.font_sebold;
+					text-align: right;
+					margin-left: 22px;
+				}
+
+					.landing_phone-city {
+						display: block;
+						font-family: Verdana, sans;
+						clear: both;
+						font-size: 9px;
+						line-height: 1.4;
+					}
+
+
+
+
 			.landing__header-info-p2 {
 				color: #6bb8f8;
 				font-size: 13px;
 				line-height: 1;
 				.font_regular;
 				padding: 0;
-				margin: 0;
+				margin: 1px 0 0;
 			}
 
 		.landing__header-btn-cont {
@@ -96,10 +118,10 @@
 				display: inline-block;
 				vertical-align: top;
 				.font_bold;
-				font-size: 18px;
+				font-size: 0;
 				line-height: 1.2;
 				color: #505050;
-				margin: 8px 30px 0 0;
+				margin: 2px 24px 0 0;
 				padding: 0;
 			}
 
@@ -111,8 +133,8 @@
 				.font_sebold;
 				color: @white;
 				.border-radius(4px);
-				padding: 4px 14px;
-				margin: 3px 0 0;
+				padding: 7px 14px;
+				margin: 0;
 				display: inline-block;
 				vertical-align: top;
 				width: auto;
