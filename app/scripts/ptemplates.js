@@ -119,10 +119,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "<strong>Perl</strong>, <strong>Python</strong>, <strong>SSI</strong>", "landing", options) : helperMissing.call(depth0, "_", "<strong>Perl</strong>, <strong>Python</strong>, <strong>SSI</strong>", "landing", options)))
-    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
-  options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Базы данных <strong>MySQL</strong>, <strong>PostgreSQL</strong>", "landing", options) : helperMissing.call(depth0, "_", "Базы данных <strong>MySQL</strong>, <strong>PostgreSQL</strong>", "landing", options)))
-    + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
+    + "</span></li>\n				"
+    + "\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['_'] || depth0['_']),stack1 ? stack1.call(depth0, "Бесплатный неограниченный трафик", "landing", options) : helperMissing.call(depth0, "_", "Бесплатный неограниченный трафик", "landing", options)))
     + "</span></li>\n				<li class=\"more\"><i class=\"i i-chk\"></i><span class=\"landing__s3-itm\">";
